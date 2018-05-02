@@ -1,0 +1,139 @@
+<include file="Common/meta" />
+</head>
+<body>
+<!-- menu -->
+<nav class="breadcrumb">
+	<i class="Hui-iconfont">&#xe67f;</i> 首页 
+	<span class="c-gray en">&gt;</span> 系统配置 
+	<span class="c-gray en">&gt;</span> 基本配置 
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" 
+	href="javascript:location.replace(location.href);" title="刷新" >
+	<i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<!-- content -->
+<div class="page-container">
+	<form class="form form-horizontal" id="form-article-add">
+		<!-- 系统设置内容 -->
+		<div id="tab-system" class="HuiTab">
+			<div class="tabBar cl">
+				<span>基本设置</span>
+			</div>
+			<!-- 分页设置 -->
+			<div class="tabCon">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2">每页显示条数</label>
+					<div class="formControls col-xs-8 col-sm-9">
+						<input type="text" id="system1" name="system1" placeholder="每页显示条数" 
+						value="24" class="input-text" style="width:370px;">&nbsp;
+						<button class="btn btn-default radius" type="button" id="system1_set_up">
+						&nbsp;&nbsp;每页显示条数&nbsp;&nbsp;</button>
+					</div>
+				</div>
+			</div>
+			<!-- 起床时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">起床时间设置</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s11_s_time" name="s1_s_time" placeholder="" value="{$system5.s1_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s11_e_time" name="s1_e_time" placeholder="" value="{$system5.s1_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="life1">&nbsp;&nbsp;起床时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+			<!-- 早饭时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">早饭时间设置</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s22_s_time" name="s2_s_time" placeholder="" value="{$system5.s2_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s22_e_time" name="s2_e_time" placeholder="" value="{$system5.s2_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="life2">&nbsp;&nbsp;早饭时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+			<!-- 午饭时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">午饭时间设置</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s33_s_time" name="s3_s_time" placeholder="" value="{$system5.s3_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s33_e_time" name="s3_e_time" placeholder="" value="{$system5.s3_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="life3">&nbsp;&nbsp;午饭时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+			<!-- 晚饭时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">晚饭时间设置</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s44_s_time" name="s4_s_time" placeholder="" value="{$system5.s4_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s44_e_time" name="s4_e_time" placeholder="" value="{$system5.s4_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="life4">&nbsp;&nbsp;晚饭时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+			<!-- 睡眠时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">睡眠时间设置</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s55_s_time" name="s5_s_time" placeholder="" 
+					value="{$system5.s5_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s55_e_time" name="s5_e_time" placeholder="" 
+					value="{$system5.s5_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="life5">&nbsp;&nbsp;睡眠时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+			<!-- 工作时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">早上工作时间</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s1_s_time" name="s1_s_time" placeholder="" 
+					value="{$system6.s1_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s1_e_time" name="s1_e_time" placeholder="" 
+					value="{$system6.s1_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="work1">&nbsp;&nbsp;工作时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+			<!-- 工作时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">中午工作时间</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s2_s_time" name="s2_s_time" placeholder="" 
+					value="{$system6.s2_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s2_e_time" name="s2_e_time" placeholder="" 
+					value="{$system6.s2_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="work2">&nbsp;&nbsp;工作时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+			<!-- 工作时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">下午工作时间</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s3_s_time" name="s3_s_time" placeholder="" 
+					value="{$system6.s3_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s3_e_time" name="s3_e_time" placeholder="" 
+					value="{$system6.s3_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="work3">&nbsp;&nbsp;下午时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+			<!-- 工作时间设置 -->
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">晚上工作时间</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" id="s4_s_time" name="s4_s_time" placeholder="" 
+					value="{$system6.s4_s_time}" class="input-text" style="width:180px;">&nbsp;
+					<input type="text" id="s4_e_time" name="s4_e_time" placeholder="" 
+					value="{$system6.s4_e_time}" class="input-text" style="width:180px;">&nbsp;
+					<button class="btn btn-default radius" type="button" id="work4">&nbsp;&nbsp;工作时间设置&nbsp;&nbsp;</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<include file="Common/foot" />
+<script src="__PUBLIC__/study/time.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/lib/My97DatePicker/WdatePicker.js"></script> 
+</body>
+</html>
+<script>
+var page_url = {
+    "save_url" : "{:U('system_base_life')}",
+    "save_work" : "{:U('system_base_work')}",
+    "list_url" : "{:U('system_base')}",
+
+}
+</script>

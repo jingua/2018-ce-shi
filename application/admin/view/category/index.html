@@ -1,0 +1,98 @@
+{include file="common/meta" /}
+<style>
+	.tp5-o2o .pagination li{display:inline; padding-left:10px;}
+.pagination .active{color:red}
+.pagination .disabled{color:#888888}
+
+</style>
+</head>
+<body>
+<!-- menu -->
+<nav class="breadcrumb">
+	<i class="Hui-iconfont">&#xe67f;</i> 首页 
+	<span class="c-gray en">&gt;</span> 分类管理 
+	<span class="c-gray en">&gt;</span> 分类列表 
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" 
+	href="javascript:location.replace(location.href);" title="刷新" >
+	<i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<!-- content -->
+<div class="page-container">
+	<div class="text-l"> 日期范围：
+
+		<input type="text" class="input-text" style="width:250px" 
+		placeholder="请输入分类名称" id="" name="">
+
+		<button type="submit" class="btn btn-success radius" id="" name="">
+		<i class="Hui-iconfont">&#xe665;</i> 搜分类</button>
+	</div>
+
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> 
+	<span class="l">
+
+	<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius">
+	<i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> 
+
+	<a href="javascript:;" onclick="o2o_s_add('添加分类','{:url('category/add')}','','810')" 
+	class="btn btn-primary radius">
+	<i class="Hui-iconfont">&#xe600;</i> 添加分类</a>
+	</span> 
+
+	<span class="r" style="line-height:28px;">共有数据：<strong>88</strong> 条</span> 
+	</div>
+	<div class="mt-20">
+	<table class="table table-border table-bordered table-hover table-bg">
+		<thead>
+			<tr class="text-c">
+				<th><input type="checkbox" name="" value=""></th>
+				<th>ID</th>
+				<th>分类名称</th>
+				<th>排序</th>
+				<th>状态</th>
+				<th>添加时间</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			{volist name="categorys" id="vo"}
+			<tr class="text-c">
+				<td><input type="checkbox" value="1" name=""></td>
+				<td>{$vo.category_id}</td>
+				<td>{$vo.category_name}</td>
+				<td class="category_sorts">
+					<input type="text" class="input-text" 
+					value="{$vo.category_sort}" placeholder="" attr-id="{$vo.category_id}"
+					id="category_sort" name="category_sort" style="width:120px;">
+				</td>
+				<td>{$vo.category_create_time|date="Y-m-d H:i",###}</td>
+				<td class="td-status"><a href="{:url('category/status',['category_id'=>$vo.category_id,'category_status'=>$vo.category_status==2?1:2])}">{$vo.category_status|status}</a></td>
+				<td class="td-manage">
+
+				<a href="{:url('category/index',['category_parent_id'=>$vo.category_id])}">获取子栏目</a>
+
+				<a title="编辑" href="javascript:;" 
+				onclick="o2o_s_add('编辑','{:url('category/edit',['category_id'=>$vo.category_id])}','','510')"
+				class="ml-5" style="text-decoration:none">
+				<i class="Hui-iconfont">&#xe6df;</i></a> 
+
+				<a title="删除" href="javascript:;" 
+				onclick="o2o_del('{:url('category/status',['category_id'=>$vo.category_id,'category_status'=>3])}')" class="ml-5"
+				style="text-decoration:none">
+				<i class="Hui-iconfont">&#xe6e2;</i></a>
+
+				</td>
+			</tr>
+			{/volist}
+			<tr><td class="tp5-o2o">{$categorys->render()}</td></tr>
+		</tbody>
+	</table>
+	</div>
+</div>
+{include file="common/foot" /}
+<script type="text/javascript">
+	var sort_url = {
+		'category_url':"{:url('category/category_sort')}",
+	}
+</script> 
+</body>
+</html>

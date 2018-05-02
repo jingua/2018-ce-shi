@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="css/pintuer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css"/>
+		<style type="text/css">
+			/*弹窗*/
+			#openWindow{width:100%; display: none; position: fixed;top: 1px; height: 100%; z-index: 500; background: rgba(0,0,0,0.6);}
+			.contentWindow{width:600px; overflow: auto; box-sizing: content-box; position: absolute; left: 50%; margin-left:-300px;  margin-top: 200px;}
+			.windowTitle{width:100%; text-indent: 10px; line-height: 20px; background: #ef6a0f; color: #fff; padding-top: 10px; padding-bottom: 10px; box-sizing: border-box; overflow: auto;}
+			.windowTitle .close{float: right; margin-right: 10px; position: relative; margin-top: -3px; }
+			.windowBody{background: #fff; width: 100%; padding-top: 20px; padding-bottom: 20px;}
+			.windowBody label span{color: red;}
+			.createGroup {margin-bottom:15px;}
+			.createGroupBtn{width:150px; text-align: center; height: 40px;  background: #FF6600; color: #fff; margin:20px auto 0px auto; line-height: 40px; font-size: 16px;}
+
+			
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png"/></div>
+				<nav class="headBar">
+					<a href="#">首页</a>
+					<a href="#">消息中心</a>
+					<a href="#">病症管理</a>
+					<a href="#">统计分析</a>
+					<a href="#">个人中心</a>
+				</nav>
+				<div class="header-operation-right">
+					<img src="img/touxiang.png"/>
+					<h3>李医生</h3>
+					<span class="logout">退出</span>
+				</div>
+			</div>
+		</header>
+		
+	
+		
+		<div class="eeebody">
+			<div class="body">
+				<div class="leftItemBar">
+					<div class="message_menu">
+						<a><div class="message_menu_item">我的预约<span class="newMessage"></span></div></a>
+					
+						<a><div class="message_menu_item">我的群组<span class="newMessage"></span></div></a>
+					
+						<a><div class="message_menu_item active">我的好友<span class="newMessage"></span></div></a>
+					
+						<a><div class="message_menu_item">科普中心<span class="newMessage"></span></div></a>
+					
+						<a><div class="message_menu_item">我的科普<span class="newMessage"></span></div></a>
+					
+						<a href="#"><div class="message_menu_item">系统消息<span class="newMessage"></span></div></a>
+					
+						<a><div class="message_menu_item">系统公告<span class="newMessage"></span></div></a>
+					</div>
+					<div class="advert_list_under">
+						<a href="prolist.html"><div class="advert_title">
+							查看更多商品
+						</div></a>
+						<a><div class="advert_products">
+							<img src="img/good.jpg">
+							<h5>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭</h5>
+							<div class="advert_products_price">
+								￥200.00
+							</div>
+						</div></a>
+						<a><div class="advert_products">
+							<img src="img/good.jpg">
+							<h5>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭</h5>
+							<div class="advert_products_price">
+								￥200.00
+							</div>
+						</div></a>
+						<a><div class="advert_products">
+							<img src="img/good.jpg">
+							<h5>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭</h5>
+							<div class="advert_products_price">
+								￥200.00
+							</div>
+						</div></a>
+						
+					</div>
+				</div>
+					
+				<div class="list_full_right">
+					<div class="message_hr">
+						<div class="message_under_title">我的群组</div>
+						<button class="createGroup btn button-small">我要建群</button>
+					</div>
+					<div class="list_full_con">
+						<a href="group_talk.html">
+						<div class="list_group_one">
+							<img src="img/erweima.jpg">
+							<div class="list_group_o_name">
+								省中医群组
+							</div>
+							<div class="list_group_o_count">
+								311351人
+							</div>
+						</div></a>
+						<a href="group_talk.html">
+						<div class="list_group_one">
+							<img src="img/erweima.jpg">
+							<div class="list_group_o_name">
+								省中医群组
+							</div>
+							<div class="list_group_o_count">
+								311351人
+							</div>
+						</div></a>
+						<a href="group_talk.html">
+						<div class="list_group_one">
+							<img src="img/erweima.jpg">
+							<div class="list_group_o_name">
+								省中医群组
+							</div>
+							<div class="list_group_o_count">
+								311351人
+							</div>
+						</div></a>
+						<a href="group_talk.html">
+						<div class="list_group_one">
+							<img src="img/erweima.jpg">
+							<div class="list_group_o_name">
+								省中医群组
+							</div>
+							<div class="list_group_o_count">
+								311351人
+							</div>
+						</div></a><a href="group_talk.html">
+						<div class="list_group_one">
+							<img src="img/erweima.jpg">
+							<div class="list_group_o_name">
+								省中医群组
+							</div>
+							<div class="list_group_o_count">
+								311351人
+							</div>
+						</div></a>
+						
+					</div>
+				
+					<div class="pubPage">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="openWindow">
+			<div class="contentWindow">
+				<div class="windowTitle">
+					<span>创建群组</span>
+					<span class="close"></span>
+				</div>
+				<div class="windowBody" style="">
+					
+					<table width="500">
+						<tr >
+							<td rowspan="2" align="center" width="180"><label class="label">
+								<span>*</span>上传群头像</label>
+								<img src="img/addPhoto.png" style="width: 90px;">
+							<input type="file" style="opacity: 0;width:1; position: absolute;z-index: -1;" class="input" placeholder="" /></td>
+							<td>
+								<label class="label">
+								<span>*</span>群名字</label>
+								<input type="text" class="input" placeholder="" />
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								<label class="label">
+								<span>*</span>群说明</label>
+								<textarea class="input"  placeholder=""></textarea>
+							</td>
+						</tr>
+					</table>
+					
+					<div class=" createGroupBtn">创建</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div>
+				<img src="img/header-logo.png" class="footer-logo"/>			
+				<div class="footer-nav">
+					<ul>
+						<li>首页</li>
+						<li>消息中心</li>
+						<li>病症管理</li>
+						<li>统计分析</li>
+						<li>个人中心</li>
+					</ul>
+					<p>Copyright © 2016依联体 粤ICP备63213542号-3</p>
+					<div><img src="img/tel.png"/>888-888-8888</div>
+				</div>
+				<img src="img/erweima.jpg" class="footer-ewm"/>
+			</div>
+		</footer>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/pintuer.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+			$(function(){
+				
+				
+				$(".createGroup").click(function(){
+					$("#openWindow").show();
+					$(".createGroupBtn").click(function(){
+						$("#openWindow").hide();
+					})
+					$(".close").click(function(){
+						$("#openWindow").hide();
+					})
+				})
+				
+			})
+		</script>
+		
+	</body>
+</html>

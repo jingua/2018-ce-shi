@@ -1,0 +1,114 @@
+{include file="Common/meta" /}
+</head>
+<body>
+<!-- menu -->
+<nav class="breadcrumb">
+	<i class="Hui-iconfont">&#xe67f;</i> 首页 
+	<span class="c-gray en">&gt;</span> 规划管理 
+	<span class="c-gray en">&gt;</span> 规划列表 
+	<!-- 刷新 -->
+	<a class="btn btn-success radius r" 
+		style="line-height:1.6em;margin-top:3px" 
+		href="javascript:location.replace(location.href);" title="刷新" >
+		<i class="Hui-iconfont">&#xe68f;</i>
+	</a>
+</nav>
+<!-- content -->
+<div class="page-container" style="margin-top:-30px;">
+	<div class="cl pd-5 mt-20">
+		<form action="{:url('StudyPlan/plan_list')}" method="post">
+		<!-- text -->
+		<input type="text" class="input-text" value=""
+		style="width:240px" name="plan_name" placeholder="请输入方案标题" />
+		<!-- select -->
+		<span class="select-box" style="width:120px;">
+			<select name="type_id" class="select">
+				<option value="">请选择类型</option>
+				<foreach name="type" item="v">
+				<option value="" 
+				<eq name="v.type_id" value="">selected</eq>>
+				</option>
+				</foreach>
+			</select>
+		</span> 
+
+		<!-- button -->
+		<button type="submit" class="btn btn-success radius" id="sousuo_user">
+		<i class="Hui-iconfont">&#xe665;</i> 搜规划方案</button>
+		</form>
+	</div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20" style="margin-top:6px;"> 
+		<span class="l">
+			<!-- delete -->
+			<a href="javascript:;" onclick="datadel()" class="btn btn-danger radius">
+			<i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+			<!-- add -->
+			<a href="{:url('StudyPlan/plan_add')}" class="btn btn-success more_coupon">添加规划</a>
+		</span> 
+		<!-- total -->
+		<span class="r" style="line-height:30px;">
+			共有数据&nbsp;&nbsp;
+			<strong></strong>&nbsp;&nbsp;条
+		</span> 
+	</div>
+	<div class="mt-20" style="margin-top:10px;">
+	<table class="table table-border table-bordered table-hover table-bg table-sort">
+		<thead>
+			<tr class="text-c">
+				<th width="40"><input type="checkbox" name="" value=""></th>
+				<th>ID</th>
+				<th>方案名称</th>
+				<th>方案类型</th>
+				<th>方案内容</th>
+				<th>日期</th>
+				<th>操作</th>
+			</tr>
+		</thead> 
+		<tbody id="ks_user">
+			<foreach name="plan.plan" item="v">
+			<tr class="text-c">
+				<td>
+					<input type="checkbox" value="" name="dataid" 
+					id="dataid" _id="">
+				</td>
+				<td></td>
+				<td class="text-l">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td></td>
+				<td class="text-l">
+					<a style="text-decoration:none" href="javascript:;" 
+					onclick="">&nbsp;&nbsp;&nbsp;&nbsp;
+					</a>
+				</td>
+				<td></td>
+				<td class="td-manage">
+					<!-- edit -->
+					<a title="编辑" 
+						href="" 
+						class="ml-5" style="text-decoration:none">
+						<i class="Hui-iconfont">&#xe6df;</i>
+					</a>&nbsp;&nbsp;
+					<!-- delete -->
+					<a style="text-decoration:none" class="ml-5" 
+						onClick="" 
+						href="javascript:;" title="删除">
+						<i class="Hui-iconfont">&#xe6e2;</i>
+					</a>
+				</td>
+			</tr> 
+			</foreach>
+			<tr><td colspan=13 style="text-align:center;"></td></tr>
+		</tbody>
+	</table>
+	</div>
+</div>
+{include file="Common/foot" /}
+<script src="__STATIC__/study/common.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/lib/My97DatePicker/WdatePicker.js"></script> 
+</body>
+</html>
+<script>
+var page_url = {
+    'save_del' : "{:url('StudyPlan/plan_del')}",
+    'list_url' : "{:url('StudyPlan/plan_list')}",
+}
+</script>

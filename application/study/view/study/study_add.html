@@ -1,0 +1,87 @@
+<include file="Common/meta" />
+</head>
+<body>
+<!-- menu -->
+<nav class="breadcrumb">
+  <i class="Hui-iconfont">&#xe67f;</i> 首页 
+  <span class="c-gray en">&gt;</span> 工作记录 
+  <span class="c-gray en">&gt;</span> 添加工作记录 
+  <!-- 刷新 -->
+  <a class="btn btn-success radius r" 
+    style="line-height:1.6em;margin-top:3px" 
+    href="javascript:location.replace(location.href);" title="刷新" >
+    <i class="Hui-iconfont">&#xe68f;</i>
+  </a>
+</nav>
+<!-- content -->
+<div class="page-container">
+	<form method="post" class="form form-horizontal" action="#" 
+    id="form-article-add" enctype="multipart/form-data">
+      <!-- text -->
+  		<div class="row cl">
+  			<label class="form-label col-xs-4 col-sm-2" style="width:160px;">工作项目</label>
+  			<div class="formControls col-xs-8 col-sm-9">
+  				<input type="text" class="input-text" value="" placeholder="请输入工作项目" 
+  				id="study_name" name="study_name">
+  			</div>
+  		</div>
+      <!-- text -->
+		  <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2" style="width:160px;">工作内容</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <textarea name="study_descr" id="study_descr" style="height:400px;"></textarea>
+            </div>
+        </div>
+       <!-- text -->
+       <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2" style="width:160px;">已完成</label>
+        <div class="formControls col-xs-8 col-sm-9">
+          <input type="text" class="input-text" value="" placeholder="请输入已完成" 
+          id="study_ywc" name="study_ywc">
+        </div>
+      </div>
+      <!-- text -->
+      <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2" style="width:160px;">未完成</label>
+        <div class="formControls col-xs-8 col-sm-9">
+          <input type="text" class="input-text" value="" placeholder="请输入未完成编号" 
+          id="study_wwc" name="study_wwc">
+        </div>
+      </div>
+      <!-- text -->
+      <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2" style="width:160px;">考核展示</label>
+        <div class="formControls col-xs-8 col-sm-9">
+          <input type="text" class="input-text" value="" placeholder="请输入工作项目" 
+          id="study_url" name="study_url">
+        </div>
+      </div>
+         <!-- text -->
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2" style="width:160px;"></label>
+            <div class="formControls col-xs-8 col-sm-9">
+            <button class="btn btn-primary radius btn_submit" type="button">
+                <i class="Hui-iconfont">&#xe632;</i> 保存并提交
+            </button>
+            <button 
+                onClick="history.go(-1);" class="btn btn-default radius" type="button">&nbsp;返回&nbsp;
+            </button>
+            </div>
+        </div>
+	</form>
+</div>
+<include file="Common/foot" />
+<!-- baidu editor -->
+<script src="__PUBLIC__/admin/lib/ue/ueditor.config.js"></script>
+<script src="__PUBLIC__/admin/lib/ue/ueditor.all.min.js"></script>
+<script src="__PUBLIC__/study/common.js"></script>
+</body>
+</html>
+<script>
+/* baidu editor */
+var ue = UE.getEditor("study_descr");
+var page_url = {
+    'save_url' : "{:U('Study/study_add_save')}",
+    'list_url' : "{:U('Study/study_list')}",
+}
+</script>

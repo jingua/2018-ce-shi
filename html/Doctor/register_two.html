@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/dropify.min.css"/>
+		<style type="text/css">
+			.liucheng{float: right;margin-top: 20px;}
+			.liucheng>div{display: inline-block;color: white;border-radius: 2px;background: url(img/liuchengbgh.png) no-repeat;background-size: 100% 100%;padding: 3px 6px;width: 125px;}
+			.now{background: url(img/liuchengbg.png) no-repeat !important;background-size: 100% 100%;}
+			.liucheng>div>span{font-weight: bold;margin-right: 16px;}
+			form{width: 450px;margin: 0 auto;}
+			form>input{text-indent: 0;width: 100%;height: 40px;margin-top: 0px;}
+			.dadiv{border: 1px solid #ccc;height: 190px;font-size: 60px;text-align: center;color: #999;line-height: 190px;margin-bottom: 10px;cursor: pointer;width: 350px;display: inline-block;}
+			.upload-describe{text-align: center;}
+			.upload-describe span{color: #ff0000;}
+			.add-img span{color: #1f6cec;cursor: pointer;}
+			.tips{color: #999;font-size: 12px;margin-top: 10px;}
+			.tip{color: #ff0000;font-size: 12px;text-align: center;}
+			.login-panel{width: 720px;margin: 10% auto 10% auto;}
+			.btn-login{width: 120px;margin: 10px auto;display: block;}
+			.pic{overflow: auto;}
+			.dropify-wrapper{margin-bottom: 10px;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png"/></div>
+				<div class="header-operation">
+					<span onclick="location.href='login.html'">登录</span>
+					<i>|</i>
+					<span onclick="location.href='register.html'">注册</span>
+				</div>
+			</div>
+		</header>
+		<div class="body">
+			<div class="liucheng">
+				<div><span>1</span>填写账号密码</div>
+				<div  class="now"><span>2</span>上传资格证</div>
+				<div><span>3</span>填写个人资料</div>
+				<div><span>4</span>资料待审核</div>
+			</div>
+			<div class="login-panel">
+				<form action="#">
+					<p class="upload-describe">上传医生资格证<span>（需要正反两面）</span></p>
+					<div class="pic">
+	                    <input type="file" id="input-file-now" class="dropify-zm pull-left" data-default-file="" data-height="190" accept="image/*"/>
+	                    <input type="file" id="input-file-now" class="dropify-fm pull-right" data-default-file="" data-height="190" accept="image/*"/>
+					</div>
+					<p class="add-img"><span>添加</span>（添加更多图片）</p>
+					<input type="text" placeholder="请输入医师资格证证件编号"/>
+					<p class="tips">若暂时不能上传资格证，此步可跳过，稍后再上传资格证即可。</p>
+				</form>
+				<p class="tip">(注：没有上传医生资格证的用户，我们将会限制使用某些功能，给您带来的不便我们深感歉意！)</p>
+				<button class="btn btn-login btn-lg" onclick="location.href='register_three.html'">下一步</button>
+				<button class="btn btn-login btn-lg" onclick="location.href='register_three.html'">跳过</button>
+			</div>
+		</div>
+		<footer><div>Copyright © 2016依联体 粤ICP备63213542号-3</div></footer>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/dropify.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+                $('.dropify-zm').dropify({
+                    messages: {
+                        'default': '请上传医生资格证正面照片',
+			        'replace': '点击或拖拽文件到这里来替换文件',
+			        'remove':  '移除文件',
+			        'error':   '对不起，你上传的文件太大了'
+                    }
+                });
+				$('.dropify-fm').dropify({
+                    messages: {
+                        'default': '请上传医生资格证反面照片',
+			        'replace': '点击或拖拽文件到这里来替换文件',
+			        'remove':  '移除文件',
+			        'error':   '对不起，你上传的文件太大了'
+                    }
+                });
+				$(".add-img span").click(function(){
+					$(".pic").append("<input type='file' id='input-file-now' class='dropify-else pull-right' data-default-file='' data-height='190' accept='image/*'>");
+					$('.dropify-else').dropify({
+                    messages: {
+                        'default': '请上传医生资格证照片',
+			        'replace': '点击或拖拽文件到这里来替换文件',
+			        'remove':  '移除文件',
+			        'error':   '对不起，你上传的文件太大了'
+                    }
+                });
+				});
+                // Used events
+                var drEvent = $('.dropify-event').dropify();
+
+                drEvent.on('dropify.beforeClear', function(event, element){
+                    return confirm("Do you really want to delete \"" + element.filename + "\" ?");
+                });
+
+                drEvent.on('dropify.afterClear', function(event, element){
+                    alert('File deleted');
+                });
+            });
+		</script>
+	</body>
+</html>

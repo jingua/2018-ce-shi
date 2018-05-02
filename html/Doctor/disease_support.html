@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="css/pintuer.css" />
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css" />
+		<style type="text/css">
+			.sendPsSelect{width:91%; float:none; margin:0px auto; margin-top: 20px;}
+			.sendPsSelect input{width:95%;}
+			/*.addNewValList{width:90%; margin:0px auto; overflow: auto;margin-top: 20px;}*/
+			.addNewValTwo{width:100%; border: 1px solid #fff; padding: 5px; box-sizing: border-box; overflow: auto;}
+			.addNewValTwo:hover{border-color:#7ecef4;}
+			h4{font-weight: bold; margin-top: 20px;}
+			.addNewValList{width:100%;}
+			.windowBody{background: #fff; padding-left: 10px; padding-right: 10px;}
+			.showText{margin-right: 10px; }
+		</style>
+	</head>
+
+	<body>
+		<header id="header">
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png" /></div>
+				<nav class="headBar">
+					<a href="index.html">首页</a>
+					<a href="mybooking.html">消息中心</a>
+					<a href="disease_my.html">病症管理</a>
+					<a href="source.html">素材中心</a>
+					<a href="statistics_sale_list.html">统计分析</a>
+					<a href="persion.html">个人中心</a>
+				</nav>
+				<div class="header-operation-right">
+					<img src="img/touxiang.png" />
+					<h3>李医生</h3>
+					<span class="logout">退出</span>
+				</div>
+			</div>
+		</header>
+
+		<div class="fix-right">
+			<div class="qzyq">群组邀请</div>
+			<div class="hyqq">好友请求</div>
+			<div class="rcjc">日常检测</div>
+			<div class="sfjl">随访记录</div>
+			<div class="fhdb">
+				<a href="#header">返回顶部 </a>
+			</div>
+		</div>
+		<div class="eeebody" style="padding: 0;">
+			<div class="body">
+				<div class="detail_back" onclick="window.history.back()">
+					<span class="icon-angle-left"></span>返回
+				</div>
+				<div class="demo_under_con">
+
+					<div class="demoContentTitle">
+						某病
+					</div>
+					
+					<div class="demoContentUnder">
+						<div class="demoContentLeft">
+							<a href="disease_base.html"><div class="demoContentItem">基本信息<span></span></div></a>
+							<a href="disease_demo.html"><div class="demoContentItem ">疾病百科</div></a>
+							<a href="disease_cure.html"><div class="demoContentItem">治疗方法</div></a>
+							<a href="disease_support.html"><div class="demoContentItem active">辅助治疗</div></a>
+							<a href="disease_daily.html"><div class="demoContentItem">日常治疗</div></a>
+							<a href="disease_science.html"><div class="demoContentItem">科普文章</div></a>
+						</div>
+						
+						<div class="demoContentRight">
+							<div class="disease_row">
+								<h4 style="margin-bottom: 10px;">辅助治疗</h4>
+								<script id="editor" type="text/plain" style="width:100%;height:60%; "></script>
+							
+							</div>
+							
+							<div class="disease_row">
+								<h4 style="margin-bottom: 10px;">推荐辅助产品</h4>
+								<button class="disease_demo_btn choiseType">添加辅助产品</button>
+							</div>
+							<div class="disease_row">
+								<div class="addNewSelectVal">
+								<div class="addNewTip" style="line-height: 40px;">
+									已选择：
+								</div>
+								<div class="addNewValList">
+										<div class="addNewValTwo"><div>产品1：</div><div class="addNewShopList"><img src="img/moreshop.jpg" ></div><div class="showText deleteCure text-yellow">删除</div><div class="showText choiseType colorGreen" data-show="4">检测随访</div><div class="showText "><a href="" class="colorGreen">查看</a></div></div>
+										
+									
+								</div>
+							</div>
+							</div>
+							
+							
+							
+							
+							
+							
+							<div class="disease_row"><div class=" orangeButton">保存</div></div>
+						</div>
+						<div class="demoContentArrow">
+							<div><span ></span></div>
+							<div><span ></span></div>
+							<div><span></span></div>
+							<div><span class="active"></span></div>
+							<div><span></span></div>
+							<div><span></span></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="openWindow" >
+			
+			<div class="contentWindow" data-showid="1" >
+				<div class="windowTitle">
+					<span>添加辅助治疗产品</span>
+					<span class="close"></span>
+				</div>
+				<div class="windowBody" style="">
+				    <div class="form-group" style=" padding-top: 10px; border-bottom: 1px solid #ef6a0f; ">
+						<div class="field">
+							<div class="input-group">
+								<input type="text" class="input"><span class="addon"><span class="icon-search" style="margin-right: 5px;"></span></span>
+							</div>
+						</div>
+					</div>
+						
+					<div class="search_science_list">
+						
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						
+					</div>
+					
+					<div class="pubPage">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contentWindow" data-showid="4" >
+				<div class="windowTitle">
+					<span>添加辅助治疗产品</span>
+					<span class="close"></span>
+				</div>
+				<div class="windowBody" style="">
+				    <div class="choise_support_shop">
+				    	<div>请选择你要查看商品的监测项目：</div>
+				    	<div class="choise_support_val">
+				    		<img src="img/good.jpg" class="active" data-choiseGoodId="1" />
+				    		<img src="img/good.jpg" data-choiseGoodId="2" />
+				    		<img src="img/good.jpg" data-choiseGoodId="3" />
+				    	</div>
+				    </div>
+						
+					<div class="choise_support_detail">
+						<table border="1" style="border-color:#EEEEEE; text-align: center;" >
+							<tr><th>名称</th><th>标准</th><th>说明</th></tr>
+							<tr><td>血压</td><td>79~180</td><td><a href="http://baidu.com">说明</a></td></tr>
+							<tr><td>血压</td><td>79~180</td><td><a href="http://baidu.com">说明</a></td></tr>
+							<tr><td>血压</td><td>79~180</td><td><a href="http://baidu.com">说明</a></td></tr>
+							<tr><td>血压</td><td>79~180</td><td><a href="http://baidu.com">说明</a></td></tr>
+							<tr><td>血压</td><td>79~180</td><td><a href="http://baidu.com">说明</a></td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+		
+			<div class="contentWindow" data-showid="3" >
+				<div class="windowTitle">
+					<span>辅助疗法</span>
+					<span class="close"></span>
+				</div>
+				<div class="windowBody" style="">
+				    <div class="form-group" style=" padding-top: 10px; border-bottom: 1px solid #ef6a0f; ">
+						<div class="field">
+							<div class="input-group">
+								<input type="text" class="input"><span class="addon"><span class="icon-search" style="margin-right: 5px;"></span></span>
+							</div>
+						</div>
+					</div>
+						
+					<div class="search_science_list">
+						
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						<div class="search_science_one">
+								<div class="name">科普科普科普科普科普科普科普</div>
+								<div class="other">添加</div>
+						</div>
+						
+					</div>
+					
+					<div class="pubPage">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+				</div>
+			</div>
+		
+			
+			<div class="contentWindow" data-showid="2" >
+				<div class="windowTitle">
+					<span>保湿</span>
+					<span class="close"></span>
+				</div>
+				<div class="windowBody" style="">
+				    <div class="form-group" style=" padding-top: 10px; border-bottom: 1px solid #ef6a0f; ">
+						<div class="field">
+							<div class="input-group">
+								<input type="text" class="input"><span class="addon"><span class="icon-search" style="margin-right: 5px;"></span></span>
+							</div>
+						</div>
+					</div>
+						
+					<div class="search_science_list" style="height: 300px;">
+						
+						<div class="search_science_three">
+								<div class="name"><input type="checkbox" class="support_checkbox"><img src="img/good.jpg"><span><a href="#">科普科普科普科普科普科普科普</a></span></div>
+								<div class="price">咨询费:888</div>
+								<div class="other">添加推荐理由</div>
+								<div class="addSupport_why">
+									<textarea class="addSupportVal"></textarea>
+									<p><button class="cancel_support">取消</button><button class="sure_support">确定</button></div>
+								</div>
+						</div>
+					</div>
+					<div class="disease_row" style="text-align: center;">
+						<button class="btn btn-lg addSupport_cancel">取消</button>
+						<button class="btn btn-lg addSupport_sure">确定</button>
+					</div>
+					<div class="disease_row"></div>
+				</div>
+			
+			
+		</div>
+			
+		</div>
+		
+		
+		<footer>
+			<div>
+				<img src="img/header-logo.png" class="footer-logo" />
+				<div class="footer-nav">
+					<ul>
+						<li>首页</li>
+						<li>消息中心</li>
+						<li>病症管理</li>
+						<li>统计分析</li>
+						<li>个人中心</li>
+					</ul>
+					<p>Copyright © 2016依联体 粤ICP备63213542号-3</p>
+					<div><img src="img/tel.png" />888-888-8888</div>
+				</div>
+				<img src="img/erweima.jpg" class="footer-ewm" />
+			</div>
+		</footer>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/pintuer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/uedit/ueditor.config.js"></script>
+		<script type="text/javascript" src="js/uedit/ueditor.all.min.js"></script>
+		<script type="text/javascript" src="js/uedit/lang/zh-cn/zh-cn.js"></script>
+		<script type="text/javascript">
+			//实例化编辑器
+			//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+			var ue = UE.getEditor('editor');
+
+			function isFocus(e) {
+				alert(UE.getEditor('editor').isFocus());
+				UE.dom.domUtils.preventDefault(e)
+			}
+
+			function setblur(e) {
+				UE.getEditor('editor').blur();
+				UE.dom.domUtils.preventDefault(e)
+			}
+
+			function insertHtml() {
+				var value = prompt('插入html代码', '');
+				UE.getEditor('editor').execCommand('insertHtml', value)
+			}
+
+			function createEditor() {
+				enableBtn();
+				UE.getEditor('editor');
+			}
+
+			function getAllHtml() {
+				alert(UE.getEditor('editor').getAllHtml())
+			}
+
+			function getContent() {
+				var arr = [];
+				arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+				arr.push("内容为：");
+				arr.push(UE.getEditor('editor').getContent());
+				alert(arr.join("\n"));
+			}
+
+			function getPlainTxt() {
+				var arr = [];
+				arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+				arr.push("内容为：");
+				arr.push(UE.getEditor('editor').getPlainTxt());
+				alert(arr.join('\n'))
+			}
+
+			function setContent(isAppendTo) {
+				var arr = [];
+				arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+				UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+				alert(arr.join("\n"));
+			}
+
+			function setDisabled() {
+				UE.getEditor('editor').setDisabled('fullscreen');
+				disableBtn("enable");
+			}
+
+			function setEnabled() {
+				UE.getEditor('editor').setEnabled();
+				enableBtn();
+			}
+
+			function getText() {
+				//当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+				var range = UE.getEditor('editor').selection.getRange();
+				range.select();
+				var txt = UE.getEditor('editor').selection.getText();
+				alert(txt)
+			}
+
+			function getContentTxt() {
+				var arr = [];
+				arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+				arr.push("编辑器的纯文本内容为：");
+				arr.push(UE.getEditor('editor').getContentTxt());
+				alert(arr.join("\n"));
+			}
+
+			function hasContent() {
+				var arr = [];
+				arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+				arr.push("判断结果为：");
+				arr.push(UE.getEditor('editor').hasContents());
+				alert(arr.join("\n"));
+			}
+
+			function setFocus() {
+				UE.getEditor('editor').focus();
+			}
+
+			function deleteEditor() {
+				disableBtn();
+				UE.getEditor('editor').destroy();
+			}
+
+			function disableBtn(str) {
+				var div = document.getElementById('btns');
+				var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+				for(var i = 0, btn; btn = btns[i++];) {
+					if(btn.id == str) {
+						UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+					} else {
+						btn.setAttribute("disabled", "true");
+					}
+				}
+			}
+
+			function enableBtn() {
+				var div = document.getElementById('btns');
+				var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+				for(var i = 0, btn; btn = btns[i++];) {
+					UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+				}
+			}
+
+			function getLocalData() {
+				alert(UE.getEditor('editor').execCommand("getlocaldata"));
+			}
+
+			function clearLocalData() {
+				UE.getEditor('editor').execCommand("clearlocaldata");
+				alert("已清空草稿箱")
+			}
+		</script>
+	
+		<script>
+			
+			function showSearch(ele,list){
+				
+				var top=$(ele).offset().top+$(ele).height();
+				var left=$(ele).offset().left;
+				var width=$(ele).width();
+				$(".searchShowUnder").css({"width":width,"top":top,"left":left}).show();
+				
+				
+				$(document).on("click",".setResult",function(){
+					var id=$(this).attr("data-setpid");
+					var name=$(this).closest(".sresultOne").find("span").first().html();
+					$(list).append("<div data-setpid='"+id+"'>"+name+"</div>");
+					$(this).closest(".sresultOne").remove();
+				})
+				
+				$(document).on("click",list+" div",function(){
+					if(confirm("是否删除当前病人?")){
+						$(this).remove();
+					}
+				})
+				
+				$(document).on("click",".searchClose",function(){
+					$(".searchShowUnder").hide();
+				})
+			}
+			
+			
+			$(function(){
+				
+				$(document).on("click",".support_checkbox",function(){
+					if($(this).prop("checked")==true){
+						$(this).closest(".search_science_three").find(".other").addClass("active");
+					}else{
+						$(this).closest(".search_science_three").find(".other").removeClass("active");
+					}
+				})
+				
+				$(document).on("click","[data-choiseGoodId]",function(){
+					$("[data-choiseGoodId]").removeClass("active");
+					var id=$(this).attr("data-choiseGoodId");
+					$(this).addClass("active");
+					
+				})
+				
+				$(document).on("click",".addSupport_cancel",function(){
+					$("#openWindow").hide();
+				})
+				
+				$(document).on("click",".search_science_three .other",function(){
+					$(this).parent().find(".addSupport_why").fadeToggle();
+				})
+				
+				$(document).on("click",".cancel_support",function(){
+					$(this).closest(".addSupport_why").fadeToggle();
+				})
+				$(document).on("click",".sure_support",function(){
+					var b=$(this).closest(".addSupport_why").find(".addSupportVal").val().length;
+					if(b>0){
+						$(this).closest(".search_science_three").find(".other").html("已添加理由");
+					}else{
+						$(this).closest(".search_science_three").find(".other").html("推荐推荐理由");
+					}
+					$(this).closest(".addSupport_why").fadeToggle();
+				})
+				
+				$(".sendPsSelect").click(function(){
+					showSearch($(this),".patientList");
+				})
+				$(".choiseType").click(function(){
+					$("#openWindow").find("[data-showid]").hide();
+					var b=$(this).attr('data-show');
+					if(b==undefined){
+						
+						$(".contentWindow").first().show();
+					}else{
+						$("[data-showid="+b+"]").show();
+					}
+					$("#openWindow").show();
+					$(".createGroupBtn").click(function(){
+						$("#openWindow").hide();
+					})
+					$(".close").click(function(){
+						$("#openWindow").hide();
+					})
+				})
+				
+				$(".addImgBtn").click(function(){
+					
+					$(".addImgBtn").show();
+					var size=$(".addUploadImg").size();
+					if(size>=2){
+						$(".addImgBtn").hide();
+					}
+					var htm='<div class="addUploadImg"><img src="img/message.jpg" /></div>';
+					$(".addImgUnder").prepend(htm)
+				})
+				
+				$(document).on("click",".addUploadImg",function(){
+					if(confirm("是否删除当前病人?")){
+						$(this).remove();
+						$(".addImgBtn").show();
+					}
+				})
+				$(document).on("click",".sendPsConVal div",function(){
+					if($(this).hasClass("active")){
+						$(this).removeClass("active");
+					}else{
+						$(this).addClass("active");
+					}
+				})
+				
+				$(document).on("click",".search_science_one .other",function(){
+					
+					var htm='<div class="addNewValTwo"><div>产品1：</div><div class="addNewShopList"><img src="img/moreshop.jpg" ></div><div class="showText deleteCure text-yellow">删除</div><div class="showText choiseType colorGreen" data-show="4">检测随访</div><div class="showText "><a href="" class="colorGreen">查看</a></div></div>';
+					$(".addNewValList").append(htm);			
+					$("#openWindow").hide();
+				})
+				
+				
+				$(document).on("click",".deleteCure",function(){
+					$(this).closest(".addNewValTwo").remove();
+				})
+			})
+			
+		</script>
+	
+	</body>
+
+</html>

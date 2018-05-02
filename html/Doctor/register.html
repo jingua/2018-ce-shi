@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<style type="text/css">
+			.liucheng{float: right;margin-top: 20px;}
+			.liucheng>div{display: inline-block;color: white;border-radius: 2px;background: url(img/liuchengbgh.png) no-repeat;background-size: 100% 100%;padding: 3px 6px;width: 125px;}
+			.now{background: url(img/liuchengbg.png) no-repeat !important;background-size: 100% 100%;}
+			.liucheng>div>span{font-weight: bold;margin-right: 16px;}
+			form>input{text-indent: 0;}
+			.yzm{background: #b7e3f8;color: white;position: absolute;right: 0px;top: 66px;height: 46px;line-height: 44px;padding: 0px 10px;cursor:pointer}
+			.btn-login{display: block;margin: 20px auto;width: 120px;}
+			.checkbox{text-align: left;text-indent: 10px;}
+			.login-panel{margin: 15% auto 10% auto;}
+			.if-login{text-align: right;}
+			.if-login>a{color: #f72626;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png"/></div>
+				<div class="header-operation">
+					<span onclick="location.href='login.html'">登录</span>
+					<i>|</i>
+					<span onclick="location.href='register.html'">注册</span>
+				</div>
+			</div>
+		</header>
+		<div class="body">
+			<div class="liucheng">
+				<div class="now"><span>1</span>填写账号密码</div>
+				<div><span>2</span>上传资格证</div>
+				<div><span>3</span>填写个人资料</div>
+				<div><span>4</span>资料待审核</div>
+			</div>
+			<div class="login-panel">
+				<h1 onclick="location.href='register.html'">注册依联体账号</h1>
+				<form action="#">
+					<input type="text" placeholder="请输入账号（账号必须为手机号码）" class="form-control input-lg"/>
+					<div class="yzm">获取验证码</div>
+					<input type="text" placeholder="短信验证码" class="form-control input-lg"/>
+					<input type="password" placeholder="请输入密码" class="form-control input-lg"/>
+					<div class="checkbox">
+				        <label>
+				          <input type="checkbox" /> 我已经阅读并同意 <a href="#">依联体注册协议</a>
+				        </label>
+				    </div>
+					<button class="btn btn-login btn-lg" onclick="location.href='register_two.html'" type="button">下一步</button>
+					<p class="if-login">已有账号？<a href="login.html">立即登录>></a></p>
+				</form>
+			</div>
+		</div>
+		<footer><div>Copyright © 2016依联体 粤ICP备63213542号-3</div></footer>
+	</body>
+</html>

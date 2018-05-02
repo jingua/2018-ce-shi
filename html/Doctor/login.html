@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png"/></div>
+				<div class="header-operation">
+					<span onclick="location.href='login.html'">登录</span>
+					<i>|</i>
+					<span onclick="location.href='register.html'" onclick="location.href='register.html'">注册</span>
+				</div>
+			</div>
+		</header>
+		<div class="body">
+			<div class="login-panel">
+				<h1>登录依联体</h1>
+				<form action="#">
+					<img src="img/zhanhao.png" class="zhanhao"/>
+					<input type="text" placeholder="请输入账号(手机号码)" class="form-control input-lg"/>
+					<img src="img/lock.png" class="lock"/>
+					<input type="password" placeholder="请输入密码" class="form-control input-lg"/>
+					<div class="who-login">
+						<div class="radio">
+					        <label>
+					          <input type="radio" name="radio"> 医生登陆
+					        </label>
+					        <label>
+					          <input type="radio" name="radio"> 助理登录
+					        </label>
+					    </div>
+					</div>
+					<button class="btn btn-login btn-block btn-lg"><a href="index.html">登录</a></button>
+					<div class="checkbox">
+				        <label>
+				          <input type="checkbox" /> 记住密码
+				        </label>
+				    </div>
+				    <a href="fgtpwd.html">忘记密码?</a>
+				    <button class="btn btn-login btn-block btn-lg" onclick="location.href='register.html'" type="button">注册</button>
+				</form>
+			</div>
+		</div>
+		<footer><div>Copyright © 2016依联体 粤ICP备63213542号-3</div></footer>
+	</body>
+</html>

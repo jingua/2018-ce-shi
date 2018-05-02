@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="css/pintuer.css" />
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css" />
+		<style type="text/css">
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<header id="header">
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png" /></div>
+				<nav class="headBar">
+					<a href="index.html">首页</a>
+					<a href="mybooking.html">消息中心</a>
+					<a href="disease_my.html">病症管理</a>
+					<a href="statistics_sale_list.html">统计分析</a>
+					<a href="persion.html">个人中心</a>
+				</nav>
+				<div class="header-operation-right">
+					<img src="img/touxiang.png" />
+					<h3>李医生</h3>
+					<span class="logout">退出</span>
+				</div>
+			</div>
+		</header>
+
+		<div class="fix-right">
+			<div class="qzyq">群组邀请</div>
+			<div class="hyqq">好友请求</div>
+			<div class="rcjc">日常检测</div>
+			<div class="sfjl">随访记录</div>
+			<div class="fhdb">
+				<a href="#header">返回顶部 </a>
+			</div>
+		</div>
+		<div class="eeebody" style="padding: 0;">
+			<div class="body">
+				<div class="detail_back" onclick="window.history.back()">
+					<span class="icon-angle-left"></span>返回
+				</div>
+				<div class="message_detail_con">
+
+					<div class="addContentTitle">
+						发布新科普
+					</div>
+					<div class="addTwColPub">
+						<div class="addTipPub">请输入科普标题：</div>
+						<div class="addTipVal">
+							<input type="text">
+						</div>
+					</div>
+					<div class="addTwColPub">
+						<div class="addTipPub">头图：</div>
+						<div class="addTipVal">
+							<div class="addImgUnder">
+								<div class="addUploadImg">
+									<img src="img/message.jpg" />
+									<!--<div class="deleteImg">删除</div>-->
+								</div>
+								<div class="addImgBtn"></div>
+							</div>
+						</div>
+					</div>
+					<script id="editor" type="text/plain" style="width:100%;height:500px; margin-bottom: 20px;"></script>
+
+					<div class="sendPositionCon">
+						<h5>请选择发布的位置</h5>
+						<div class="sendPsCon">
+							<div class="sendPsConTip">科普：</div>
+							<div class="sendPsConVal articleType">
+								<div data-typeid="1">痤疮类</div>
+								<div data-typeid="2">过敏类</div>
+							</div>
+						</div>
+<!--
+						<div class="sendPsCon">
+							<div class="sendPsConTip">病人：</div>
+							<div class="sendPsConVal patientType">
+								<div data-patientid="0">不选择</div>
+								<div data-patientid="1">过敏类</div>
+							</div>
+						</div>
+						<div class="sendPsCon">
+							<div class="sendPsConTip" style="line-height: 28px;">病人：</div>
+							<div class="sendPsSelect" >
+								<input type="text" readonly=""><span class="icon-angle-down"></span>
+								
+							</div>
+							<div class="searchShowUnder">
+								
+									<span class="icon-search searchBtns"></span>
+									<input type="text" class="searchVal">
+									<div class="searchResultShow">
+										<div class="sresultOne">
+											<span>李景安</span><span data-setpid="1" class="setResult">添加</span>
+										</div>
+										<div class="sresultOne">
+											<span>李景安</span><span data-setpid="2" class="setResult">添加</span>
+										</div>
+										<div class="sresultOne">
+											<span>李景安</span><span data-setpid="2" class="setResult">添加</span>
+										</div>
+										<div class="sresultOne">
+											<span>李景安</span><span data-setpid="3" class="setResult">添加</span>
+										</div>
+										
+									</div>
+								<div class=" searchClose" >关闭</div>	
+							</div>
+							<div class="sendToPatient">
+								<div class="tips">已选择</div>
+								<div class="patientList">
+									
+								</div>
+							</div>
+						</div>
+						
+						-->
+						<div class="form-group">
+							<div class="field">
+								<label style="margin-right: 20px;">
+									<input name="pintuer" type="radio">公开
+								</label>
+								<label>
+									<input name="pintuer" type="radio">不公开
+								</label>
+							</div>
+						</div>
+					
+						
+					</div>
+					<div class="addContentBtn">我要发布</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<footer>
+			<div>
+				<img src="img/header-logo.png" class="footer-logo" />
+				<div class="footer-nav">
+					<ul>
+						<li>首页</li>
+						<li>消息中心</li>
+						<li>病症管理</li>
+						<li>统计分析</li>
+						<li>个人中心</li>
+					</ul>
+					<p>Copyright © 2016依联体 粤ICP备63213542号-3</p>
+					<div><img src="img/tel.png" />888-888-8888</div>
+				</div>
+				<img src="img/erweima.jpg" class="footer-ewm" />
+			</div>
+		</footer>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/pintuer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/uedit/ueditor.config.js"></script>
+		<script type="text/javascript" src="js/uedit/ueditor.all.min.js"></script>
+		<script type="text/javascript" src="js/uedit/lang/zh-cn/zh-cn.js"></script>
+		<script type="text/javascript">
+			//实例化编辑器
+			//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+			var ue = UE.getEditor('editor');
+
+			function isFocus(e) {
+				alert(UE.getEditor('editor').isFocus());
+				UE.dom.domUtils.preventDefault(e)
+			}
+
+			function setblur(e) {
+				UE.getEditor('editor').blur();
+				UE.dom.domUtils.preventDefault(e)
+			}
+
+			function insertHtml() {
+				var value = prompt('插入html代码', '');
+				UE.getEditor('editor').execCommand('insertHtml', value)
+			}
+
+			function createEditor() {
+				enableBtn();
+				UE.getEditor('editor');
+			}
+
+			function getAllHtml() {
+				alert(UE.getEditor('editor').getAllHtml())
+			}
+
+			function getContent() {
+				var arr = [];
+				arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+				arr.push("内容为：");
+				arr.push(UE.getEditor('editor').getContent());
+				alert(arr.join("\n"));
+			}
+
+			function getPlainTxt() {
+				var arr = [];
+				arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+				arr.push("内容为：");
+				arr.push(UE.getEditor('editor').getPlainTxt());
+				alert(arr.join('\n'))
+			}
+
+			function setContent(isAppendTo) {
+				var arr = [];
+				arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+				UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+				alert(arr.join("\n"));
+			}
+
+			function setDisabled() {
+				UE.getEditor('editor').setDisabled('fullscreen');
+				disableBtn("enable");
+			}
+
+			function setEnabled() {
+				UE.getEditor('editor').setEnabled();
+				enableBtn();
+			}
+
+			function getText() {
+				//当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+				var range = UE.getEditor('editor').selection.getRange();
+				range.select();
+				var txt = UE.getEditor('editor').selection.getText();
+				alert(txt)
+			}
+
+			function getContentTxt() {
+				var arr = [];
+				arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+				arr.push("编辑器的纯文本内容为：");
+				arr.push(UE.getEditor('editor').getContentTxt());
+				alert(arr.join("\n"));
+			}
+
+			function hasContent() {
+				var arr = [];
+				arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+				arr.push("判断结果为：");
+				arr.push(UE.getEditor('editor').hasContents());
+				alert(arr.join("\n"));
+			}
+
+			function setFocus() {
+				UE.getEditor('editor').focus();
+			}
+
+			function deleteEditor() {
+				disableBtn();
+				UE.getEditor('editor').destroy();
+			}
+
+			function disableBtn(str) {
+				var div = document.getElementById('btns');
+				var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+				for(var i = 0, btn; btn = btns[i++];) {
+					if(btn.id == str) {
+						UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+					} else {
+						btn.setAttribute("disabled", "true");
+					}
+				}
+			}
+
+			function enableBtn() {
+				var div = document.getElementById('btns');
+				var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+				for(var i = 0, btn; btn = btns[i++];) {
+					UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+				}
+			}
+
+			function getLocalData() {
+				alert(UE.getEditor('editor').execCommand("getlocaldata"));
+			}
+
+			function clearLocalData() {
+				UE.getEditor('editor').execCommand("clearlocaldata");
+				alert("已清空草稿箱")
+			}
+		</script>
+	
+		<script>
+			
+			function showSearch(ele,list){
+				
+				var top=$(ele).offset().top+$(ele).height();
+				var left=$(ele).offset().left;
+				var width=$(ele).width();
+				$(".searchShowUnder").css({"width":width,"top":top,"left":left}).show();
+				
+				
+				$(document).on("click",".setResult",function(){
+					var id=$(this).attr("data-setpid");
+					var name=$(this).closest(".sresultOne").find("span").first().html();
+					$(list).append("<div data-setpid='"+id+"'>"+name+"</div>");
+					$(this).closest(".sresultOne").remove();
+				})
+				
+				$(document).on("click",list+" div",function(){
+					if(confirm("是否删除当前病人?")){
+						$(this).remove();
+					}
+				})
+				
+				$(document).on("click",".searchClose",function(){
+					$(".searchShowUnder").hide();
+				})
+			}
+			
+			
+			$(function(){
+				$(".sendPsSelect").click(function(){
+					showSearch($(this),".patientList");
+				})
+				
+				$(".addImgBtn").click(function(){
+					
+					$(".addImgBtn").show();
+					var size=$(".addUploadImg").size();
+					if(size>=2){
+						$(".addImgBtn").hide();
+					}
+					var htm='<div class="addUploadImg"><img src="img/message.jpg" /></div>';
+					$(".addImgUnder").prepend(htm)
+				})
+				
+				$(document).on("click",".addUploadImg",function(){
+					if(confirm("是否删除当前病人?")){
+						$(this).remove();
+						$(".addImgBtn").show();
+					}
+				})
+				$(document).on("click",".sendPsConVal div",function(){
+					if($(this).hasClass("active")){
+						$(this).removeClass("active");
+					}else{
+						$(this).addClass("active");
+					}
+				})
+			})
+			
+		</script>
+	
+	</body>
+
+</html>

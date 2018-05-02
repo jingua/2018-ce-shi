@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="css/pintuer.css" />
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css" />
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<header id="header">
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png" /></div>
+				<nav class="headBar">
+					<a href="index.html">首页</a>
+					<a href="mybooking.html">消息中心</a>
+					<a href="disease_my.html">病症管理</a>
+					<a href="source.html">素材中心</a>
+					<a href="statistics_sale_list.html">统计分析</a>
+					<a href="persion.html">个人中心</a>
+				</nav>
+				<div class="header-operation-right">
+					<img src="img/touxiang.png" />
+					<h3>李医生</h3>
+					<span class="logout">退出</span>
+				</div>
+			</div>
+		</header>
+
+		<div class="fix-right">
+			<div class="qzyq">群组邀请</div>
+			<div class="hyqq">好友请求</div>
+			<div class="rcjc">日常检测</div>
+			<div class="sfjl">随访记录</div>
+			<div class="fhdb">
+				<a href="#header">返回顶部 </a>
+			</div>
+		</div>
+		<div class="eeebody" style="padding: 0;">
+			<div class="body">
+				<div class="detail_back" onclick="window.history.back()">
+					<span class="icon-angle-left"></span>返回
+				</div>
+				<div class="demo_under_con">
+
+					<div class="demoContentTitle">
+						某病
+					</div>
+					
+					<div class="demoContentUnder">
+						<div class="demoContentLeft">
+							<a href="disease_base.html"><div class="demoContentItem active">基本信息<span></span></div></a>
+							<a href="disease_demo.html"><div class="demoContentItem ">疾病百科</div></a>
+							<a href="disease_cure.html"><div class="demoContentItem">治疗方法</div></a>
+							<a href="disease_support.html"><div class="demoContentItem">辅助治疗</div></a>
+							<a href="disease_daily.html"><div class="demoContentItem">日常治疗</div></a>
+							<a href="disease_science.html"><div class="demoContentItem">科普文章</div></a>
+						</div>
+						
+						<div class="demoContentRight"><br>
+							<div class="disease_row">
+								<div class="disease_input">
+									<div>病症名称：</div>
+									<input type="text">
+								</div>
+								<div class="disease_input">
+									<div>其他名称：</div>
+									<input type="text">
+								</div>
+								<div class="disease_input">
+									<div>关键字：</div>
+									<input type="text">
+								</div>
+								<div class="disease_input">
+									<textarea class="base_val"></textarea>
+								</div>
+							</div>
+							
+							
+							<div class=" orangeButton">保存</div>
+							
+						</div>
+						<div class="demoContentArrow">
+							<div><span ></span></div>
+							<div><span class="active"></span></div>
+							<div><span></span></div>
+							<div><span></span></div>
+							<div><span></span></div>
+							<div><span></span></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<footer>
+			<div>
+				<img src="img/header-logo.png" class="footer-logo" />
+				<div class="footer-nav">
+					<ul>
+						<li>首页</li>
+						<li>消息中心</li>
+						<li>病症管理</li>
+						<li>统计分析</li>
+						<li>个人中心</li>
+					</ul>
+					<p>Copyright © 2016依联体 粤ICP备63213542号-3</p>
+					<div><img src="img/tel.png" />888-888-8888</div>
+				</div>
+				<img src="img/erweima.jpg" class="footer-ewm" />
+			</div>
+		</footer>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/pintuer.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+			
+			
+			
+			
+			$(function(){
+				$(".sendPsSelect").click(function(){
+					showSearch($(this),".patientList");
+				})
+				
+				$(".addImgBtn").click(function(){
+					
+					$(".addImgBtn").show();
+					var size=$(".addUploadImg").size();
+					if(size>=2){
+						$(".addImgBtn").hide();
+					}
+					var htm='<div class="addUploadImg"><img src="img/message.jpg" /></div>';
+					$(".addImgUnder").prepend(htm)
+				})
+				
+				$(document).on("click",".addUploadImg",function(){
+					if(confirm("是否删除当前病人?")){
+						$(this).remove();
+						$(".addImgBtn").show();
+					}
+				})
+				$(document).on("click",".sendPsConVal div",function(){
+					if($(this).hasClass("active")){
+						$(this).removeClass("active");
+					}else{
+						$(this).addClass("active");
+					}
+				})
+			})
+			
+		</script>
+	
+	</body>
+
+</html>

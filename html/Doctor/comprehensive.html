@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		
+	    <link rel="stylesheet" href="css/sign.css" />
+		<link rel="stylesheet" type="text/css" href="css/pintuer.css" />
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css" />
+		<link rel="stylesheet" href="css/personalData.css" />
+		<script src="js/uedit/third-party/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/sign.js" ></script>
+		<script src="js/personalData.js"></script>
+		
+		<style>	
+		.tipName{width:40%;}
+			.rich_media{background: #fff;}
+			.rich_tip{width:100%; padding-top:0px ; text-align: center; background: #fff; margin-bottom: 15px; padding-bottom:15px; overflow: auto; border-bottom: 1px solid #ccc; }
+			.tipName{margin-left: 10px;}
+			.book_under{width:100%; overflow: auto; display: none; position:fixed; top: 0px; z-index: 1031; background: rgba(0,0,0,0.5);}
+			
+			.book_content{width:100%; overflow: auto; position:absolute; bottom:0px;}
+			.book_type{width:100%; overflow: auto; background: #fff; padding: 10px; box-sizing: border-box; text-align: center; border-bottom: 1px solid #ccc;}
+			.book_type button{width:70%;}
+			.book_cancel{width:100%; padding: 10px; font-size: 14px; background: #fff; overflow: auto; text-align: center;}
+			.setOnLine{width:180px; display:none; padding-bottom: 10px; background: #fff; border:1px solid #008000 ;  overflow: auto; position: absolute; top: 50px;}
+			.closeSetOnLine{width:20px; height:20px; color: #fff; background: #000; text-align: center; margin-right:5px; margin-top: 5px; float: right;}
+			.setOneLineItem{width:100%; text-indent: 20px; overflow: auto; height: 30px; line-height: 30px;}
+			.setOneLineItem input{margin-left: 10px;}
+			.setOneLineItem input[type=text]{width:50px; height: 20px;}
+			.setOnLineBtn{margin: 10px auto; display: block;}
+		</style>
+	</head>
+
+	<body>
+		<header id="header">
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png" /></div>
+				<nav class="headBar">
+					<a href="index.html">首页</a>
+					<a href="mybooking.html">消息中心</a>
+					<a href="disease_my.html">病症管理</a>
+					<a href="source.html">素材中心</a>
+					<a href="statistics_sale_list.html">统计分析</a>
+					<a href="persion.html">个人中心</a>
+				</nav>
+				<div class="header-operation-right">
+					<img src="img/touxiang.png" />
+					<h3>李医生</h3>
+					<span class="logout">退出</span>
+				</div>
+			</div>
+		</header>
+       <div class="fix-right">
+			<div class="qzyq">群组邀请</div>
+			<div class="hyqq">好友请求</div>
+			<div class="rcjc">日常检测</div>
+			<div class="sfjl">随访记录</div>
+			<div class="fhdb">
+				<a href="#header">返回顶部 </a>
+			</div>
+		</div>
+
+       	<div class="eeebody">
+			<div class="body">
+				<div class="leftItemBar">
+					<div class="message_menu">
+						<a href="persion.html"><div class="message_menu_item ">个人资料</div></a>
+					
+						<a href="pass.html"><div class="message_menu_item">密码维护</div></a>
+					
+						<a href="assistant.html"><div class="message_menu_item ">医助管理</div></a>
+					
+						<a href="complaint.html"><div class="message_menu_item ">投诉建议</div></a>
+					
+						<a href="comprehensive.html"><div class="message_menu_item active">综合设置</div></a>
+						
+						<a href="my_product.html"><div class="message_menu_item">我的商品</div></a>
+
+
+					</div>
+					<div class="advert_list_under">
+						<a href="prolist.html"><div class="advert_title">
+							查看更多商品
+						</div></a>
+						<a><div class="advert_products">
+							<img src="img/good.jpg">
+							<h5>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭</h5>
+							<div class="advert_products_price">
+								￥200.00
+							</div>
+						</div></a>
+						<a><div class="advert_products">
+							<img src="img/good.jpg">
+							<h5>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭</h5>
+							<div class="advert_products_price">
+								￥200.00
+							</div>
+						</div></a>
+						<a><div class="advert_products">
+							<img src="img/good.jpg">
+							<h5>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭</h5>
+							<div class="advert_products_price">
+								￥200.00
+							</div>
+						</div></a>
+						
+					</div>
+				</div>
+					
+				<div class="list_full_right">
+					<div class="message_hr personal-title">
+						<div class="message_under_title">综合设置</div>
+						<!---->
+					</div>
+					<div class="list_full_con">		
+						
+					</div>
+				  
+				  
+	         <div class="data-sheet">
+	              	<div class="data-txt">排班表设置</div>
+	              	 
+	              	  <div class="free_content">
+			<!-----日期控件----->
+			<div class="rich_media">
+	            <div id="page-content">
+				    <div class="container-fluid">
+				    	<div class="row-fluid">
+				    		<div class='sign_succ_calendar_title' style="display:block;">
+				    			<div class='calendar_month_span' style="color:#28B4C3;">
+				    				<span id='minusMonth' style='padding-right:50px;cursor: pointer;'><</span>
+				    				<span id='currDate'></span>
+				    				<span id='addMonth' style='padding-left:50px;cursor: pointer;'>></span>
+				    			</div>
+				    		</div>
+				    		<div id="calendar"></div>
+				    	</div>
+				    </div>
+	            </div>
+	    	</div>
+	    	<!-----日期控件----->
+	    	<div class="rich_tip">
+	    		<span><img src="img/ban.png" style="width:20px;"></span>上班<span class="normalAcount"></span>门诊预约<span class="VIPAcount"></span>特需门诊预约
+	    	</div>
+	    	
+				
+			</div>
+	  </div>
+	  
+	  <div class="gainSetting">
+	     <div class="data-txt">收益设置</div>
+	     <div class="gain-ul">
+	     	<ul>
+	     		<li>
+	     			<div>
+	     				远程会诊金额：<input type="text" />元<a href="#">保存</a>
+	     			</div>
+	     		</li>
+	     		<li>
+	     			<div>
+	     				医生回答金额：<input type="text" />元<a href="#">保存</a>
+	     			</div>
+	     		</li>
+	     		<li>
+	     			<div>
+	     				托管回答金额：<input type="text" />元<a href="#">保存</a>
+	     			</div>
+	     		</li>
+	     		<li>
+	     			<div>
+	     				特许预约金额：<input type="text" />元<a href="#">保存</a>
+	     			</div>
+	     		</li>
+	     	</ul>
+	     </div>
+	  </div>
+	  <div class="address">
+	  	  <div class="data-txt">特需预约地址</div>
+	  	  <div class="address-ipt">
+	  	  	  <div class="ipt-div"><input type="text" /><a href="#">修改</a></div>
+	  	  	  <div class="ipt-txt">请谨慎填写特需预约地址，修改需要提交新地址到医联体，由我们给您修改</div> 
+	  	  </div>
+	  </div>
+		
+		</div>
+		</div>
+		
+		<div class="setOnLine">
+			<div class="closeSetOnLine"><span class="icon-times"></span></div>
+			<div class="setOneLineItem">
+				<span>上班</span><input type="checkbox" name="setLine" data-settingLine="">
+			</div>
+			<div class="setOneLineItem">
+				<span>门诊</span><input type="checkbox" name="setLine" data-lineNormal=""><input type="text" data-lineNormalNum=""><span>人
+			</div>
+			<div class="setOneLineItem">
+				<span>特需</span><input type="checkbox" name="setLine" data-lineSpecial=""><input type="text" data-lineSpecialNum=""><span>人</span>
+			</div>
+			<div class="setOneLineItem">
+				<span>会诊</span><input type="checkbox" name="setLine" data-totalNormal=""><input type="text" data-totalNormalNum=""><span>人</span>
+			</div>
+			<div class="setOneLineItem">
+				<span>转诊</span><input type="checkbox" name="setLine" data-turnNormal=""><input type="text" data-turnNormalNum=""><span>人</span>
+			</div>
+			<button class="button bg-yellow setOnLineBtn">确定</button>
+		</div>
+		
+		<footer>
+			<div>
+				<img src="img/header-logo.png" class="footer-logo" />
+				<div class="footer-nav">
+					<ul>
+						<li>首页</li>
+						<li>消息中心</li>
+						<li>病症管理</li>
+						<li>统计分析</li>
+						<li>个人中心</li>
+					</ul>
+					<p>Copyright © 2016依联体 粤ICP备63213542号-3</p>
+					<div><img src="img/tel.png" />888-888-8888</div>
+				</div>
+				<img src="img/erweima.jpg" class="footer-ewm" />
+			</div>
+		</footer>
+		
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="framework/bootstrap-3.3.5-dist/js/bootstrap.min.js" ></script>
+	
+	<script>
+	function initSign(year, month, signList){
+				$("#currDate").text(year+"-"+((month+1)<10?"0"+(month+1):(month+1)));
+				var currDate = $("#currDate").text();
+				console.log(year,month+1);
+				console.log(signList);
+				var str = calUtil.drawCal(year,month+1,signList);
+				$("#calendar").html("").html(str);
+//				if(currDate=year+"-"+((month+1)<10?"0"+(month+1):(month+1))){
+//					
+//				}
+			}
+	$(function(){
+		
+		
+		var iDate = new Date();
+		/*var signList = ['2015-11-02','2015-11-05','2015-11-08'];*/
+		
+		
+		/*json中文注释：
+		 	日期:[上午[普通客户，vip客户，是否上班],下午[普通客户，vip客户，是否上班]]
+		 */
+		var signList={"2016-09-02":
+						{"morning":[1,1,1],"after":[1,1,1]},
+					  "2016-09-03":
+						{"morning":[1,0,1],"after":[1,1,1]},
+					  "2016-09-10":
+						{"morning":[1,0,0],"after":[0,1,1]},
+				};
+		
+		var signLists={"2016-10-02":
+						{"morning":[1,1,1],"after":[1,1,1]},
+					  "2016-10-03":
+						{"morning":[1,0,1],"after":[1,1,1]},
+					  "2016-10-11":
+						{"morning":[1,0,0],"after":[0,1,1]},
+				};
+		
+		
+		initSign(iDate.getFullYear(), iDate.getMonth(), signList);
+		
+		$("#minusMonth").on("click", function(){
+					var currDate = $("#currDate").text();
+					var date = new Date(currDate);
+					//0表示1月份，再减一个月就得减年份
+					var year;
+					var month;
+					if(date.getMonth() == 0){
+						year = date.getFullYear() - 1;
+						month = 11;
+						//var signList = "";
+						
+					}else{
+						year = date.getFullYear();
+						month = date.getMonth()-1;
+						//var signList = "";
+						console.log(year+"="+month);	
+					}
+					
+					
+						initSign(year, month, signList);
+				});
+				//下一个月的签到情况
+				$("#addMonth").on("click", function(){
+					var currDate = $("#currDate").text();
+					var date = new Date(currDate);
+					//11表示12月份，再加一个月就得加年份
+					var year;
+					var month;
+					if(date.getMonth() == 11){
+						year = date.getFullYear() + 1;//年份加1
+						month = 0;//月份重新赋值为0（表示1月）
+						//var signList = "";
+					}else{
+						year = date.getFullYear();
+						month = date.getMonth()+1;
+						//var signList = "";
+					}
+					
+					
+					initSign(year, month, signList);
+				});
+				
+				
+				$(".closeSetOnLine").click(function(){
+					$(".setOnLine").hide();
+					$(".setOnLine").find("input[type=text]").val('');
+					$(".setOnLine").find("input[type=checkbox]").prop('checked',false);
+				})
+				
+				$(document).on("click",".onMonth",function(e){
+					$(this).addClass("active");
+					var top=$(this).offset().top;
+					var left=$(this).offset().left+$(this).width();
+					
+					$(".setOnLine").css({"top":top,"left":left});
+					$(".setOnLine").show();
+					//if($(this))
+					
+				})
+				
+				$(".setOnLineBtn").click(function(){
+					var onLine=$("[data-settingLine]").prop("checked");
+					var onNormal=$("[data-linenormal]").prop("checked");
+					var onSpecial=$("[data-linespecial]").prop("checked");
+					var onTotal=$("[data-totalnormal]").prop("checked");
+					var onTurn=$("[data-turnnormal]").prop("checked");
+					var normalNum=$("[data-lineNormalNum]").val();
+					var specialNum=$("[data-linespecialnum]").val();
+					var totalNum=$("[data-totalnormalnum]").val();
+					var turnNum=$("[data-turnnormalnum]").val();
+					
+					
+					alert(onLine);
+					$(".setOnLine").hide();
+				})
+				
+				
+				
+				
+				$(".book").click(function(){
+					if(confirm("是否确定预约？")){
+						alert("预约成功");
+					}
+					$(".book_under").fadeOut();
+				})
+				
+				$(".bookMoney").click(function(){
+					if(confirm("是否确定预约？特需预约需要付款哦！")){
+						alert("付款");
+					}
+					$(".book_under").fadeOut();
+				})
+				
+				$(".book_cancel").click(function(){
+					$(".book_under").fadeOut();
+				})
+				
+	})
+	
+	
+	
+	
+	
+	</script>
+	</body>
+
+</html>

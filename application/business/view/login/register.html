@@ -1,0 +1,259 @@
+{include file="common/meta" /}
+
+<style>
+.form-horizontal .form-label {
+    width:260px;
+}
+</style>
+</head>
+<body>
+<div class="page-container">
+	<form action="{:url('login/add')}" method="post" class="form form-horizontal" id="form-article-add">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"></label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size:32px;color:red;">
+				商户入驻申请
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"></label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size:16px;color:red;">
+				基本信息
+			</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">
+			<span class="c-red">*</span>商户名称</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="" name="name">
+			</div>
+		</div>
+		<!-- select -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">
+			<span class="c-red">*</span>所属城市</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			<span class="select-box" style="width:180px;">
+				<select name="city_id" class="select cityId">
+					<option value="">请选择</option>
+					{volist name="city1" id="v1"}
+					<option value="{$v1.city_id}">{$v1.city_name}</option>
+					{/volist}
+				</select>
+			</span>
+			<span class="select-box" style="width:180px;">
+				<select name="se_city_id" class="select city_parent_id">
+					<option value="0">--请选择--</option>
+				</select>
+			</span>
+			</div>
+		</div>
+		<!-- file -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">缩略图</label>
+			 <div class="formControls col-xs-8 col-sm-9">
+                <input id="file_upload"  type="file" multiple="true" >
+                <img style="display: none" id="upload_org_code_img" src="" width="150" height="150">
+                <input id="file_upload_image" name="logo" type="hidden" multiple="true" value="">
+              </div>
+		</div>
+
+		<!-- file -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">营业执照</label>
+			<div class="formControls col-xs-8 col-sm-9">
+                <input id="file_upload_other"  type="file" multiple="true" >
+                <img style="display: none" id="upload_org_code_img_other" src="" width="150" height="150">
+                <input id="file_upload_image_other" name="licence_logo" type="hidden" multiple="true" value="">
+              </div>
+		</div>
+		
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">商户介绍</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="description" id="description" cols="30" rows="10"></textarea>
+			</div>
+		</div>
+		<!-- checkbox -->
+		<!-- <div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">允许评论</label>
+			<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+				<div class="check-box">
+					<input type="checkbox" id="checkbox-1">
+					<label for="checkbox-1">&nbsp;</label>
+				</div>
+			</div>
+		</div> -->
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">银行帐号</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="bank_info" id="" placeholder="" value="" class="input-text">
+			</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">开户行名称</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="bank_name" id="" placeholder="" value="" class="input-text">
+			</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">开户行姓名</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="bank_user" id="" placeholder="" value="" class="input-text">
+			</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">法人</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="faren" id="" placeholder="" value="" 
+				class="input-text" style="width:90%">
+				kg</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">法人电话</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="faren_tel" id="" placeholder="" value="" 
+				class="input-text" style="width:90%">
+				</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">邮箱</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="email" id="" placeholder="" value="" 
+				class="input-text" style="width:90%">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"></label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size:16px;color:red;">
+				总店信息
+			</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">电话</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="tel" id="" placeholder="" value="" 
+				class="input-text" style="width:90%">
+				</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">联系人</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="contact" id="" placeholder="" value="" class="input-text" style="width:90%">
+				</div>
+		</div>
+
+		<!-- select -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">
+			<span class="c-red">*</span>所属分类</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			<span class="select-box" style="width:280px;">
+				<select name="category_id" class="select categoryId">
+					<option value="">请选择</option>
+					{volist name="category" id="v2"}
+					<option value="{$v2.category_id}">{$v2.category_name}</option>
+					{/volist}
+				</select>
+			</span>
+			</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">所属子类</label>
+			<div class="formControls col-xs-8 col-sm-3 skin-minimal">
+				<div class="check-box se_category_id">
+
+				</div>
+			</div>
+		</div>
+
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">商户地址</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="address" id="" placeholder="" value="" class="input-text" style="width:90%">
+				</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">营业时间</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="open_time" id="" placeholder="" value="" class="input-text" style="width:90%">
+				</div>
+		</div>
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">门店介绍</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="content" id="content" cols="30" rows="10"></textarea>
+				</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"></label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size:16px;color:red;">
+				帐号信息
+			</div>
+		</div>
+
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">用户名</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="username" id="" placeholder="" value="" class="input-text" style="width:90%">
+				</div>
+		</div>
+
+		<!-- text -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">密码</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" name="password" id="" placeholder="" value="" class="input-text" style="width:90%">
+				</div>
+		</div>
+
+		<!-- button -->
+        <div class="row cl">
+            <div class="formControls col-xs-8 col-sm-9">
+                <label class="form-label col-xs-4 col-sm-2"></label>
+                <button onClick="article_save_submit();" class="btn btn-primary radius" type="submit">
+                    <i class="Hui-iconfont">&#xe632;</i> 保存并提交审核
+                </button>
+                <button onClick="article_save();" class="btn btn-secondary radius" type="button">
+                    <i class="Hui-iconfont">&#xe632;</i> 保存草稿
+                </button>
+                <button onClick="removeIframe();" class="btn btn-default radius" type="button">
+                    &nbsp;&nbsp;取消&nbsp;&nbsp;
+                </button>
+            </div>
+        </div>
+	</form>
+</div>
+{include file="common/foot" /}
+<script src="__STATIC__/admin/lib/ue/ueditor.config.js"></script>
+<script src="__STATIC__/admin/lib/ue/ueditor.all.min.js"></script>
+
+<script type="text/javascript"> 
+//实例化编辑器
+var ue = UE.getEditor("description");
+var ue = UE.getEditor("content");
+var SCOPE = {
+	"city_url" : "{:url('api/city/get_city_two')}",
+	"category_url" : "{:url('api/category/get_category_two')}",
+	'uploadify_swf' : '__STATIC__/admin/uploadify/uploadify.swf',
+	'image_upload' : "{:url('api/image/upload')}",
+}
+</script>
+</body>
+</html>

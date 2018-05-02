@@ -1,0 +1,67 @@
+{include file="common/meta" /}
+<style>
+.form-horizontal .form-label {
+    width:160px;
+}
+</style>
+</head>
+<body>
+<article class="page-container">
+	<form action="{:url('category/save')}" method="post" class="form form-horizontal" id="form-member-add">
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">
+			<span class="c-red">*</span>分类名称</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" 
+				placeholder="请输入分类名称" id="category_name" name="category_name">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">
+			<span class="c-red">*</span>排序</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="0" placeholder="" 
+				id="category_sort" name="category_sort">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">
+			<span class="c-red">*</span>地图</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<img src="{:url('business/test2')}" alt="">
+			</div>
+		</div>
+
+		
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3">所在城市</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select class="select" size="1" name="category_parent_id">
+					<option value="" selected>请选择城市</option>
+					{volist name="categorys" id="vo"}
+					<option value="{$vo.category_id}">{$vo.category_name}</option>
+					{/volist}
+				</select>
+				</span> </div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"></label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+				<button onClick="layer_close();" class="btn btn-default radius" type="button">
+				&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+
+	</form>
+</article>
+
+{include file="common/foot" /}
+
+</body>
+</html>

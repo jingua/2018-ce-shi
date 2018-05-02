@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="css/pintuer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css"/>
+		<style type="text/css">
+			.search-div{margin-top: 20px;margin-bottom: 20px;}
+			.body-left{width: 240px;float: left;overflow: hidden;}
+			.media-active{background: #13a045;color: white !important;}
+			.href-ship{background: #f1f1f1;padding: 8px;font-size: 18px;text-align: center;cursor: pointer; margin-bottom: 5px;}
+			.body-left>ul{padding-left: 0;}
+			.body-left>ul li{text-align: center; list-style: none;  color: #13a045;border: 1px solid #13A045;margin-bottom: 5px;padding: 4px;cursor: pointer;}
+			.media-active-panel{margin-bottom: 10px;}
+			.media-active-panel>p{color: #646464;border-bottom: 1px dashed #ccc;padding-bottom: 10px; margin-bottom: 7px;}
+			.media-active-panel>img{margin: 0 auto;display: block;}
+			.body-left>a{text-align: right;display: block;color: #888;}
+			.body-right{width: 700px;overflow: hidden;float: right;}
+			.right-title{padding: 4px;font-size: 12px;}
+			.right-title>.pull-right{color: #999999;}
+			.title-dazi{font-size: 20px;}
+			.nav-tabs{border-bottom: #13a045 1px solid;}
+			.addon{cursor: pointer;}
+			.tab-nav{padding: 0;}			
+			.tab .tab-nav .active a{color: #13A045 !important;}
+			.zhanwz{width: 140px;height: 120px;}
+			.kpul{width: 540px;}
+			.kpul li:hover{color: #dc3020;}
+			.kpul li{padding: 5px 0px;border-bottom: 1px dashed #ccc;cursor: pointer;}
+			.kpul li>div{width: 300px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;float: left;}
+			.kpul li>span{float: right; margin-left: 10px;}
+			.kp-lookmore{cursor: pointer;color: #999;line-height: 26px;}
+			.xtgg{margin-top: 20px; border-bottom: 1px solid #ccc; margin-bottom: 10px;}
+			.xtgg-ul{width: 100%;overflow: auto;list-style:circle; padding-left: 5px;}
+			
+			.xtgg-ul li{cursor: pointer;padding: 7px 0px;border-bottom: 1px dashed #ccc;overflow: auto; list-style:circle;}
+			.xtgg-ul li:hover{color: #dc3020;}
+			.xtgg-ul li>div{width: 400px;white-space: nowrap;text-overflow:ellipsis;float: left;overflow: hidden;}
+			.xtgg-ul li>span{float: right; margin-left: 10px;}
+			.xhb{width: 100%;margin: 40px 0px;}
+			.ylt-wh{height: 400px;position: relative;background: #f2f2f2;}
+			.ylt-wh>h1{position: absolute;top: 70px;left: 120px;}
+			.ylt-wh>img{position: absolute;right: 120px;top: 50px;}
+			.wh-panel{position: absolute;top: 100px;left: 120px;width: 288px;color: #999;}
+			.media-active-panel{display: none; padding-left: 10px; padding-right: 10px;}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png"/></div>
+				<nav class="headBar">
+					<a href="index.html">首页</a>
+					<a href="mybooking.html">消息中心</a>
+					<a href="disease_my.html">病症管理</a>
+					<a href="source.html">素材中心</a>
+					<a href="statistics_sale_list.html">统计分析</a>
+					<a href="persion.html">个人中心</a>
+				</nav>
+				<div class="header-operation-right">
+					<img src="img/touxiang.png"/>
+					<h3>李医生</h3>
+					<span><a href="login.html">退出</a></span>
+				</div>
+			</div>
+		</header>
+		
+		<div class="banner">
+			<div class="carousel">
+				<div class="item">
+					<img src="img/banner1.jpg"/>
+				</div>
+				<div class="item">
+					<img src="img/banner1.jpg"/>
+				</div>
+				<div class="item">
+					<img src="img/banner1.jpg"/>	
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			 <div class=" search-div">
+			    <div class="form-group">
+					<div class="field">
+						<div class="input-group">
+							<input type="text" class="input" /><span class="addon"><span class="icon-search" style="margin-right: 5px;"  ></span><a href="product_search.html">搜索</a></span>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  <div class="body-left">
+			  	<div class="href-ship">依联体视频</div>
+			  	<ul>
+			  		<li class="media-active">标题标题</li>
+			  		<div class="media-active-panel">
+			  			<p>简要的内容简要的内容简要的内容简要的内容简要的内容...</p>
+			  			<img src="img/tu1.jpg"/>
+			  		</div>
+			  		<li>标题标题</li>
+			  		<div class="media-active-panel">
+			  			<p>简要的内容简要的内容简要的内容简要的内容简要的内容...</p>
+			  			<img src="img/tu1.jpg"/>
+			  		</div>
+			  		<li>标题标题</li>
+			  		<div class="media-active-panel">
+			  			<p>简要的内容简要的内容简要的内容简要的内容简要的内容...</p>
+			  			<img src="img/tu1.jpg"/>
+			  		</div>
+			  		<li>标题标题</li>
+			  		<div class="media-active-panel">
+			  			<p>简要的内容简要的内容简要的内容简要的内容简要的内容...</p>
+			  			<img src="img/tu1.jpg"/>
+			  		</div>
+			  		<li>标题标题</li>
+			  		<div class="media-active-panel">
+			  			<p>简要的内容简要的内容简要的内容简要的内容简要的内容...</p>
+			  			<img src="img/tu1.jpg"/>
+			  		</div>
+			  		<li>标题标题</li>
+			  		<div class="media-active-panel">
+			  			<p>简要的内容简要的内容简要的内容简要的内容简要的内容...</p>
+			  			<img src="img/tu1.jpg"/>
+			  		</div>
+			  	</ul>
+			  	<a href="#">查看更多>></a>
+			  </div>
+			  <div class="body-right">
+			  	<div class="right-title">
+			  		<span class="title-dazi">科普中心</span>
+			  		<span>Science Popularization Center</span>
+			  		<span class="float-right kp-lookmore"><a href="message.html">查看更多>></a></span>
+			  	</div>
+			  	<div class="tab">
+					<div class="tab-head">
+						<ul class="tab-nav">
+							<li class="active"><a href="#tab-start">皮肤科</a> </li>
+							<li><a href="#tab-css">皮肤科</a> </li>
+							<li><a href="#tab-units">皮肤科</a> </li>
+						</ul>
+					</div>
+					<div class="tab-body">
+						<div class="tab-panel active" id="tab-start">
+							<img src="img/tu1.jpg" class="zhanwz float-left"/>	
+							<ul class="float-right kpul">
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+							</ul>
+						</div>
+						<div class="tab-panel" id="tab-css">
+							<img src="img/tu1.jpg" class="zhanwz float-left"/>	
+							<ul class="float-right kpul">
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+							</ul>
+						</div>
+						<div class="tab-panel" id="tab-units">
+							<img src="img/tu1.jpg" class="zhanwz float-left"/>	
+							<ul class="float-right kpul">
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+								<a href="message_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="right-title xtgg">
+			  		<span class="title-dazi">系统公告</span>
+			  		<span>System announcement</span>
+			  		<span class="float-right kp-lookmore"><a href="notice.html">查看更多>></a></span>
+			  	</div>
+				<ul class="xtgg-ul">
+					<a href="notice_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+					<a href="notice_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+					<a href="notice_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+					<a href="notice_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+					<a href="notice_detail.html"><li><div>标题标题标题标题标题标题标题标题标题标题标题标题标题</div> <span>2016/7/21</span><span>李医师</span> </li></a>
+					
+				</ul>
+			  </div>
+			  <img src="img/XHB.jpg" class="xhb" />
+			  <div class="ylt-wh">
+			  	<h1>依联体文化</h1>
+			  	<div class="wh-panel">
+			  		内容内容内容内容内容内容内容内容内容
+					内容内容内容内容内容内容内容内容内容
+					内容内容内容内容内容内容内容内容内容
+					内容内容内容内容内容内容内容内容内容
+					内容内容内容内容内容内容内容内容内容
+					内容内容内容内容内容内容内容内容内容
+					内容内容内容内容内容内容内容内容内容
+					内容内容内容内容内容内容内容内容内容
+					内容内容内容内容内容内容内容内容...
+			  	</div>
+			  	<img src="img/dajiating.png"/>
+			  </div>
+		</div>
+		<footer>
+			<div>
+				<img src="img/header-logo.png" class="footer-logo"/>			
+				<div class="footer-nav">
+					<ul>
+						<li>首页</li>
+						<li>消息中心</li>
+						<li>病症管理</li>
+						<li>统计分析</li>
+						<li>个人中心</li>
+					</ul>
+					<p>Copyright © 2016依联体 粤ICP备63213542号-3</p>
+					<div><img src="img/tel.png"/>888-888-8888</div>
+				</div>
+				<img src="img/erweima.jpg" class="footer-ewm"/>
+			</div>
+		</footer>
+		
+		
+		<div class="fix-right">
+			<div class="hyqq">好友请求</div>
+			<div class="rcjc">日常检测</div>
+			<div class="sfjl">随访记录</div>
+			<div class="fhdb"><a href="#header">返回顶部 </a></div>
+		</div>
+		
+		<div class="fixed-bottom-right">
+			<div class="talkNow">会话中</div>
+		</div>
+		
+		
+		
+		
+		<div id="rightWindow">
+			<div class="contentWindow"  data-rightshowid="1">
+				<div class="windowTitle">
+					<span>好友请求</span>
+					<span class="close"></span>
+				</div>
+				<div class="windowBody" style="">
+				    
+						
+					<div class="search_friend_list">
+						<p>2015-4-18</p>
+						<div class="rightfriendOne">
+								<img src="img/user.jpg">
+								<div class="rightuserOther">
+									<div class="name">羊羊羊样</div>
+									<div class="other">签名简介签名简介签名简介签名简介签名简介签名简介签名简介</div>
+									<div class="other"><span>广东广州</span><span>|</span><span>皮肤病</span><span>|</span><span>13912345678</span></div>
+								</div>
+								<div class="rightuserCtrl">
+								
+									<span class="rightuserCtrl_sure" data-tofriendid="1">同意</span>
+									<span class="rightuserCtrl_refuse">拒绝</span>
+								</div>
+						</div>
+						
+					</div>
+					
+					<div class="pubPage">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="contentWindow"  data-rightshowid="2">
+				<div class="windowTitle">
+					<span>日常监测</span>
+					<span class="close"></span>
+				</div>
+				<div class="windowBody" style="">
+				    
+						
+					<div class="search_friend_list">
+						<p class="text-red rightListTip">你有病人日常监测出现问题，请及时查看</p>
+						<div class="rightfriendOne">
+								<img src="img/user.jpg">
+								<div class="rightuserOther">
+									<div class="name">羊羊羊样/VIP/VVIP</div>
+									<div class="other"><span>广东广州</span><span>|</span><span>皮肤病</span><span>|</span><span>13912345678</span></div>
+									<div class="other text-red"><span>2016-5-5 10:10:10</span><span>监测超出正常水平</span><span>有多项</span></div>
+								</div>
+								<div class="rightuserCtrl">
+								
+									<a href="#" class="rightCtrlLine">查看详细</a>
+								</div>
+						</div>
+						
+					</div>
+					
+					<div class="pubPage">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contentWindow"  data-rightshowid="3">
+				<div class="windowTitle">
+					<span>随访记录</span>
+					<span class="close"></span>
+				</div>
+				<div class="windowBody" style="">
+				    
+						
+					<div class="search_friend_list">
+						<p class="text-red rightListTip">你有病人随访记录出现问题，请及时查看</p>
+						<div class="rightfriendOne">
+							<img src="img/user.jpg">
+							<div class="rightuserOther">
+								<div class="name">羊羊羊样/VIP/VVIP</div>
+								<div class="other"><span>广东广州</span><span>|</span><span>皮肤病</span><span>|</span><span>13912345678</span></div>
+								<div class="other text-red"><span>2016-5-5 10:10:10</span><span>随访不正常</span><span>有多项</span></div>
+							</div>
+							<div class="rightuserCtrl">
+							
+								<a href="#" class="rightCtrlLine">查看详细</a>
+							</div>
+						</div>
+						<div class="rightfriendOne">
+							<img src="img/user.jpg">
+							<div class="rightuserOther">
+								<div class="name">羊羊羊样/VIP/VVIP</div>
+								<div class="other"><span>广东广州</span><span>|</span><span>皮肤病</span><span>|</span><span>13912345678</span></div>
+								<div class="other text-red"><span>2016-5-5 10:10:10</span><span>随访不正常</span></div>
+							</div>
+							<div class="rightuserCtrl">
+							
+								<a href="#" class="rightCtrlLine">查看详细</a>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="pubPage">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		
+		
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/pintuer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".media-active").next("div").show();
+				$(".body-left li").click(function(){
+					$(this).addClass("media-active");
+					$(this).next(".media-active-panel").show();
+					$(this).siblings("li").next(".media-active-panel").hide();
+					$(this).siblings("li").removeClass("media-active");
+				});
+			});
+		</script>
+	</body>
+</html>

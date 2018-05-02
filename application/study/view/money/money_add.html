@@ -1,0 +1,107 @@
+<include file="Common/meta" />
+</head>
+<body>
+<!-- menu -->
+<nav class="breadcrumb">
+  <i class="Hui-iconfont">&#xe67f;</i> 首页 
+  <span class="c-gray en">&gt;</span> 财务管理 
+  <span class="c-gray en">&gt;</span> 添加财务 
+  <!-- 刷新 -->
+  <a class="btn btn-success radius r" 
+    style="line-height:1.6em;margin-top:3px" 
+    href="javascript:location.replace(location.href);" title="刷新" >
+    <i class="Hui-iconfont">&#xe68f;</i>
+  </a>
+</nav>
+<!-- content -->
+<div class="page-container">
+	<form method="post" class="form form-horizontal" action="#" 
+    id="form-article-add" enctype="multipart/form-data">
+      <!-- text -->
+  		<div class="row cl">
+  			<label class="form-label col-xs-4 col-sm-2" style="width:160px;">收入金额</label>
+  			<div class="formControls col-xs-8 col-sm-9">
+  				<input type="text" class="input-text" value="" placeholder="请输入收入金额" 
+  				id="money_total" name="money_total">
+  			</div>
+  		</div>
+      <!-- date -->
+      <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2" style="width:160px;">
+        收入时间</label>
+        <div class="formControls col-xs-8 col-sm-9">
+          <input type="text" 
+          onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',Date:'#F{$dp.$D(\'datemin\') or \'%y-%M-%d\'}'})" 
+          id="datemin" class="input-text Wdate" placeholder="请选择收入时间" name="money_time">
+        </div>
+      </div>
+        <!-- select -->
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2" style="width:160px;">收入类型</label>
+            <div class="formControls col-xs-8 col-sm-9"> 
+                <span class="select-box">
+                    <select name="type_id" id="type_id" class="select">
+                        <option value="">请选择</option>
+                        <volist name="type" id="v">
+                            <option value="{$v.type_id}">{$v.type_name}</option>
+                        </volist>
+                    </select>
+                </span> 
+            </div>
+        </div>
+         <!-- select -->
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2" style="width:160px;">财务类型</label>
+            <div class="formControls col-xs-8 col-sm-9"> 
+                <span class="select-box">
+                    <select name="money_type" id="money_type" class="select">
+                        <option value="1">收入</option>
+                        <option value="2">支出</option>
+                    </select>
+                </span> 
+            </div>
+        </div>
+        <!-- text -->
+        <div class="row cl">
+          <label class="form-label col-xs-4 col-sm-2" style="width:160px;">收入描述</label>
+          <div class="formControls col-xs-8 col-sm-9">
+            <input type="text" class="input-text" value="" placeholder="请输入收入描述" 
+            id="money_descr" name="money_descr">
+          </div>
+        </div>
+      <!-- textarea -->
+		  <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2" style="width:160px;">收入备注</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <textarea name="money_mark" id="money_mark" style="height:400px;"></textarea>
+            </div>
+        </div>
+         <!-- button -->
+         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2" style="width:160px;"></label>
+            <div class="formControls col-xs-8 col-sm-9">
+            <button class="btn btn-primary radius btn_submit" type="button">
+                <i class="Hui-iconfont">&#xe632;</i> 保存并提交
+            </button>
+            <button 
+                onClick="history.go(-1);" class="btn btn-default radius" type="button">&nbsp;返回&nbsp;
+            </button>
+            </div>
+        </div> 
+	</form>
+</div>
+<include file="Common/foot" />
+<!-- baidu editor -->
+<script src="__PUBLIC__/admin/lib/ue/ueditor.config.js"></script>
+<script src="__PUBLIC__/admin/lib/ue/ueditor.all.min.js"></script>
+<script src="__PUBLIC__/study/common.js"></script>
+</body>
+</html>
+<script>
+/* baidu editor */
+var ue = UE.getEditor("money_mark");
+var page_url = {
+    'save_url' : "{:U('Money/money_add_save')}",
+    'list_url' : "{:U('Money/money_list')}",
+}
+</script>

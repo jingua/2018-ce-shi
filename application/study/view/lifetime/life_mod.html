@@ -1,0 +1,96 @@
+<include file="Common/meta" />
+</head>
+<body>
+<!-- menu -->
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 
+    <span class="c-gray en">&gt;</span> 成长记录
+    <span class="c-gray en">&gt;</span> 编辑成长考核
+    <!-- 刷新 -->
+    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" 
+    href="javascript:location.replace(location.href);" title="刷新" >
+    <i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<!-- content -->
+<div class="page-container">
+	<form method="post" class="form form-horizontal" action="#" 
+    id="form-article-add" enctype="multipart/form-data">
+      <!-- text -->
+  		<div class="row cl">
+         <label class="form-label col-xs-4 col-sm-2" style="width:160px;">起床时间</label>
+  			<div class="formControls col-xs-8 col-sm-9">
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s1_s_time']);?>" placeholder="" 
+          id="s1_s_time" name="s1_s_time" style="width:180px;">
+          -
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s1_e_time']);?>" placeholder="" 
+          id="s1_e_time" name="s1_e_time" style="width:180px;">
+          </div>
+  		</div>
+      <!-- text -->
+      <div class="row cl">
+         <label class="form-label col-xs-4 col-sm-2" style="width:160px;">早饭时间</label>
+        <div class="formControls col-xs-8 col-sm-9">
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s2_s_time']);?>" placeholder="" 
+          id="s2_s_time" name="s2_s_time" style="width:180px;">
+          -
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s2_e_time']);?>" placeholder="" 
+          id="s2_e_time" name="s2_e_time" style="width:180px;">
+          </div>
+      </div>
+      <!-- text -->
+      <div class="row cl">
+         <label class="form-label col-xs-4 col-sm-2" style="width:160px;">午饭时间</label>
+        <div class="formControls col-xs-8 col-sm-9">
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s3_s_time']);?>" placeholder="" 
+          id="s3_s_time" name="s3_s_time" style="width:180px;">
+          -
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s3_e_time']);?>" placeholder="" 
+          id="s3_e_time" name="s3_e_time" style="width:180px;">
+          </div>
+      </div>
+      <!-- text -->
+      <div class="row cl">
+         <label class="form-label col-xs-4 col-sm-2" style="width:160px;">晚饭时间</label>
+        <div class="formControls col-xs-8 col-sm-9">
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s4_s_time']);?>" placeholder="" 
+          id="s4_s_time" name="s4_s_time" style="width:180px;">
+          -
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s4_e_time']);?>" placeholder="" 
+          id="s4_e_time" name="s4_e_time" style="width:180px;">
+          </div>
+      </div>
+      <!-- text -->
+      <div class="row cl">
+         <label class="form-label col-xs-4 col-sm-2" style="width:160px;">睡眠时间</label>
+        <div class="formControls col-xs-8 col-sm-9">
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s5_s_time']);?>" placeholder="" 
+          id="s5_s_time" name="s5_s_time" style="width:180px;">
+          -
+          <input type="text" class="input-text" value="<?php echo date('H:i',$time['s5_e_time']);?>" placeholder="" 
+          id="s5_e_time" name="s5_e_time" style="width:180px;">
+          </div>
+          <input type="hidden" name="life_id" value="{$time.life_id}">
+    </div>
+       <!-- text -->
+       <div class="row cl">
+          <label class="form-label col-xs-4 col-sm-2" style="width:160px;"></label>
+          <div class="formControls col-xs-8 col-sm-9">
+          <button class="btn btn-primary radius btn_submit" type="button">
+              <i class="Hui-iconfont">&#xe632;</i> 保存并提交
+          </button>
+          <button 
+              onClick="history.go(-1);" class="btn btn-default radius" type="button">&nbsp;返回&nbsp;
+          </button>
+          </div>
+      </div>
+	</form>
+</div>
+<include file="Common/foot" />
+<script src="__PUBLIC__/study/common.js"></script>
+</body>
+</html>
+<script>
+var page_url = {
+    'save_url' : "{:U('LifeTime/life_mod_save')}",
+    'list_url' : "{:U('LifeTime/life_list')}",
+}
+</script>

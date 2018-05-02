@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<style type="text/css">
+			.liucheng{float: right;margin-top: 20px;}
+			.liucheng>div{display: inline-block;color: white;border-radius: 2px;background: url(img/liuchengbgh.png) no-repeat;background-size: 100% 100%;padding: 3px 6px;width: 125px;}
+			.now{background: url(img/liuchengbg.png) no-repeat !important;background-size: 100% 100%;}
+			.liucheng>div>span{font-weight: bold;margin-right: 16px;}
+			form>input{text-indent: 0;width: 100%;height: 40px;margin-top: 0px;}
+			.dadiv{;border: 1px solid #ccc;height: 190px;font-size: 60px;text-align: center;color: #999;line-height: 190px;margin-bottom: 10px;cursor: pointer;width: 350px;display: inline-block;}
+			.upload-describe{text-align: center;}
+			.upload-describe span{color: #ff0000;}
+			.add-img span{color: #1f6cec;cursor: pointer;}
+			.tips{color: #999;font-size: 12px;margin-top: 10px;}
+			.tip{color: #ff0000;font-size: 12px;text-align: center;}
+			.login-panel{width: 600px;margin: 10% auto 10% auto;}
+			.btn-login{width: 120px;margin: 40px auto;display: block;}
+			.pic{overflow: auto;}
+			.form-horizontal .form-group{overflow: auto;margin: 0px 0px 10px 0px;}
+			.label-control{height: 34px;line-height: 34px;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png"/></div>
+				<div class="header-operation">
+					<span><a href="login.html">登录</a></span>
+					<i>|</i>
+					<span><a href="register.html">注册</a></span>
+				</div>
+			</div>
+		</header>
+		<div class="body">
+			<div class="liucheng">
+				<div><span>1</span>填写账号密码</div>
+				<div><span>2</span>上传资格证</div>
+				<div class="now"><span>3</span>填写个人资料</div>
+				<div><span>4</span>资料待审核</div>
+			</div>
+			<div class="login-panel">
+				<form class="form-horizontal">
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label col-sm-offset-2">姓名</label>
+				    <div class="col-sm-5">
+				      <input type="email" class="form-control">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label col-sm-offset-2">性别</label>
+				    <div class="col-sm-5">
+				      <label class="checkbox-inline">
+					  <input type="checkbox" value="option1"> 男
+					</label>
+					<label class="checkbox-inline">
+					  <input type="checkbox" value="option2"> 女
+					</label>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label col-sm-offset-2">出生日期</label>
+				    <div class="col-sm-5">
+				      <input type="date" class="form-control">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label col-sm-offset-2">科室</label>
+				    <div class="col-sm-5">
+				      <select  class="form-control">
+				      	<option></option>
+				      </select>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label col-sm-offset-2">学历</label>
+				    <div class="col-sm-5">
+				       <select  class="form-control">
+				      	<option></option>
+				      </select>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label col-sm-offset-2">职务</label>
+				    <div class="col-sm-5">
+				      <input type="text" class="form-control">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label col-sm-offset-2">职称</label>
+				    <div class="col-sm-5">
+				      <input type="text" class="form-control">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label">工作地区</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-2 control-label">工作单位</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-1 col-sm-11">
+				      <button type="button" class="btn btn-login" onclick="location.href='register_four.html'">注册</button>
+				    </div>
+				  </div>
+				</form>
+			</div>
+		</div>
+		<footer><div>Copyright © 2016依联体 粤ICP备63213542号-3</div></footer>
+	</body>
+</html>

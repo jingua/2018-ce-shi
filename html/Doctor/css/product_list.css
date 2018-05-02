@@ -1,0 +1,51 @@
+	.search-div{margin-top:10px;margin-bottom: 0px;}
+			.banner{width:100%;}
+			.banner .item img{width: 100%;}
+			.carousel img{ height:auto !important; }
+			
+			.body-left>a{text-align: right;display: block;color: #888;}
+			.body-right{width: 700px;overflow: hidden;float: right;}
+			.right-title{padding: 4px;font-size: 12px;}
+			.right-title>.pull-right{color: #999999;}
+			.title-dazi{font-size: 20px;}
+			.nav-tabs{border-bottom: #13a045 1px solid;}
+			.addon{cursor: pointer;}
+			.tab-nav{padding: 0;}			
+			.tab .tab-nav .active a{color: #13A045 !important;}
+			.zhanwz{width: 140px;height: 120px;}
+			.kpul{width: 540px;}
+			.kpul li:hover{color: #dc3020;}
+			.kpul li{padding: 5px 0px;border-bottom: 1px dashed #ccc;cursor: pointer;}
+			.kpul li>div{width: 300px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;float: left;}
+			.kpul li>span{float: right; margin-left: 10px;}
+			.kp-lookmore{cursor: pointer;color: #999;line-height: 26px;}
+			.xtgg{margin-top: 20px; border-bottom: 1px solid #ccc; margin-bottom: 10px;}
+			.xtgg-ul{width: 100%;overflow: auto;list-style:circle; padding-left: 5px;}
+			
+			.xtgg-ul li{cursor: pointer;padding: 7px 0px;border-bottom: 1px dashed #ccc;overflow: auto; list-style:circle;}
+			.xtgg-ul li:hover{color: #dc3020;}
+			.xtgg-ul li>div{width: 400px;white-space: nowrap;text-overflow:ellipsis;float: left;overflow: hidden;}
+			.xtgg-ul li>span{float: right; margin-left: 10px;}
+			.xhb{width: 100%;margin: 40px 0px;}
+			
+			.product_one{width:24%; margin-bottom: 10px; margin-right:1%; float: left; overflow: auto; border:1px solid #fff;}
+			
+			.product_one:nth-child(4n){ margin-right:0px ;}
+			.product_one img{width:100%; margin-bottom: 10px;}
+			.products_price{margin-left:5px; width: 50%; color: red;}
+			h6{ margin-left:8px; margin-right: 5px; margin-top: 10px; margin-bottom: 10px;}
+			.product_one p{margin: 0px ; line-height:30px; font-size: 12px; margin-left:5px; margin-right: 5px;  border-top: 1px dashed #ccc; text-align: center;  }
+			.product_one p span{color: #00B7EE;}
+			
+
+.product_search_val{width:100%; overflow: auto;}
+.search_null{width:700px; margin: 0px auto; padding: 20px; position: relative; overflow: auto; background: #eee;}
+.search_null .x3{text-align: center;}
+.search_null input{width: 95%;}
+
+.statistice_title{width:100%; border-bottom: 1px solid #999; text-align: center; line-height: 40px; overflow: auto; font-size: 16px;}
+
+.statistice_table{width:100%; margin-top: 15px; overflow: auto; text-align: center; border: 1px solid #eee;}
+
+.statistice_table tr{line-height: 30px;}
+.statistice_table tr:first-child th{ background: #ccc;}

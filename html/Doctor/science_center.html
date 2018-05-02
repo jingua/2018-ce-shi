@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="css/pintuer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lzmpublic.css"/>
+		<style type="text/css">
+			body{background: #f5f2f2;}
+			.body{margin-top: 20px;}
+			.body-left{width: 160px;float: left;}
+			.body-left-nav div{background: white;border-bottom: 1px dashed #ccc;text-align: center;padding: 12px;}
+			.body-left-nav-active{background: #00bf44 !important;color: white;}
+			.body-left-nav div:last-child{border-bottom: 0px;}
+			.body-left-nav div>span{background: ;}
+			.body-left-more{margin-top: 20px;padding: 5px;background: white;}
+			.more-title{padding: 10px;text-align: center;}
+			.body-left-more-panel img{width: 100%;}
+			.body-left-more-panel p{color: #969696;font-size: 12px;line-height: 15px;margin: 5px 0px;}
+			.body-left-more-panel div{color: #c40000;}
+			.body-zhong{overflow: auto;width: 600px;background: white;margin-left: 20px;float: left;padding: 20px;}
+			.zhong-title{border-bottom: 1px dashed #ccc;overflow: auto;padding-bottom: 20px;}
+			.form-group{padding-bottom: 0px;height: 40px;}
+			.field,.field>.input-group,.input-group>input{height: 40px;}
+			.zhong-title-dazi{font-size: 30px;color: #808080;}
+			.body-zhong-nav{padding: 10px 0px;border-bottom: 1px dashed #ccc;}
+			.body-zhong-nav div{border: 1px solid #ccc;padding: 6px;color: #999999;display: inline-block;margin-right: 5px;cursor: pointer;}
+			.body-zhong-nav div:hover{border-color: #13A045;}
+			.body-zhong-nav-active{background: #daf7e4;border: 1px solid #13a045 !important;color: #13a045;}
+			.body-zhong-nav-hot{border: 1px solid #ef6a0f !important;}
+			.body-zhong-media{margin-top: 20px;padding-bottom: 20px;border-bottom: 1px solid #ccc;}
+			.body-zhong-media>h3{margin-bottom: 10px;}
+			.body-zhong-media>img{width: 260px;height: 150px;}
+			.zhong-media-panel{width: 240px;float: right;color: #999999;}
+			.zhong-media-panel>p{line-height: 20px;padding-bottom: 0px;margin-top: 10px;margin-bottom: 0px;overflow: hidden;text-overflow:ellipsis;height: 120px;}
+			.panel-title-name{color: #13a045;}
+			.panel-title-date span{margin-right: 10px;}
+			.panel-title-video{float: right;color: #13A045;}
+			.pagination{display: block;margin: 0 auto;width: 300px;margin-top: 20px;}
+			.body-right{width: 157px;float: right;}
+			.body-right-haibao{width: 157px;height: 300px;}
+			.wyfb{background: #ef6a0f;color: white;padding: 12px;width: 157px;text-align: center;margin-top: 20px;}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<div>
+				<div class="header-logo"><img src="img/header-logo.png"/></div>
+				<nav>
+					<a href="#">首页</a>
+					<a href="#" class="header-now">消息中心</a>
+					<a href="#">病症管理</a>
+					<a href="#">统计分析</a>
+					<a href="#">个人中心</a>
+				</nav>
+				<div class="header-operation">
+					<img src="img/touxiang.png"/>
+					<h3>李医生</h3>
+					<span>退出</span>
+				</div>
+			</div>
+		</header>
+		<div class="fix-right">
+			<div class="qzyq">群组邀请</div>
+			<div class="hyqq">好友请求</div>
+			<div class="rcjc">日常检测</div>
+			<div class="sfjl">随访记录</div>
+			<div class="fhdb"><a href="#header">返回顶部 </a></div>
+		</div>
+		<div class="body">
+			<div class="body-left">
+				<div class="body-left-nav">
+					<div>我的预约</div>
+					<div>我的群组</div>
+					<div>我的好友</div>
+					<div class="body-left-nav-active">科普中心</div>
+					<div>我的科普</div>
+					<div>系统消息</div>
+					<div>系统公告<span class="badge"></span></div>
+				</div>
+				<div class="body-left-more">
+					<div class="more-title">查看更多商品</div>
+					<div class="body-left-more-panel">
+						<img src="img/moreshop.jpg"/>
+						<p>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭男女腋下药品</p>
+						<div>￥599.00</div>
+					</div>
+					<div class="body-left-more-panel">
+						<img src="img/moreshop.jpg"/>
+						<p>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭男女腋下药品</p>
+						<div>￥599.00</div>
+					</div>
+					<div class="body-left-more-panel">
+						<img src="img/moreshop.jpg"/>
+						<p>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭男女腋下药品</p>
+						<div>￥599.00</div>
+					</div>
+					<div class="body-left-more-panel">
+						<img src="img/moreshop.jpg"/>
+						<p>西施兰夏露喷雾乌洛托品溶液 治狐臭药 腋臭男女腋下药品</p>
+						<div>￥599.00</div>
+					</div>
+				</div>
+			</div>
+			<div class="body-zhong">
+				<div class="zhong-title">
+					<div class="zhong-title-dazi x4">科普中心</div>
+					<div class="x4 x4-move search-div">
+					    <div class="form-group">
+							<div class="field">
+								<div class="input-group">
+									<input type="text" class="input" /><span class="addon">搜索</span>
+								</div>
+							</div>
+						</div>
+				  </div>
+				</div>
+				<div class="body-zhong-nav">
+					<div>皮肤病</div>
+					<div>眼疾</div>
+					<div>手足癣病</div>
+					<div class="body-zhong-nav-active">皮肤病</div>
+					<div>眼疾</div>
+					<div class="body-zhong-nav-hot">论文科普</div>
+					<div class="body-zhong-nav-hot">视频科普</div>
+				</div>
+				<div class="body-zhong-media">
+					<h3>标题标题标题标题标题标题标题标题标题标题标题标</h3>
+					<img src="img/touxiang.png"/>
+					<div class="zhong-media-panel">
+						<div class="zhong-media-panel-title">
+							<span class="panel-title-name">喜洋洋</span>
+							<span class="panel-title-date"><span>|</span>2016年07月22日</span>
+							<span class="panel-title-video">附视频</span>
+						</div>
+						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+					</div>
+				</div>
+				<div class="body-zhong-media">
+					<h3>标题标题标题标题标题标题标题标题标题标题标题标</h3>
+					<img src="img/touxiang.png"/>
+					<div class="zhong-media-panel">
+						<div class="zhong-media-panel-title">
+							<span class="panel-title-name">喜洋洋</span>
+							<span class="panel-title-date"><span>|</span>2016年07月22日</span>
+							<span class="panel-title-video">附视频</span>
+						</div>
+						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+					</div>
+				</div>
+				<div class="body-zhong-media">
+					<h3>标题标题标题标题标题标题标题标题标题标题标题标</h3>
+					<img src="img/touxiang.png"/>
+					<div class="zhong-media-panel">
+						<div class="zhong-media-panel-title">
+							<span class="panel-title-name">喜洋洋</span>
+							<span class="panel-title-date"><span>|</span>2016年07月22日</span>
+							<span class="panel-title-video">附视频</span>
+						</div>
+						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+					</div>
+				</div>
+				<ul class="pagination border-main">
+				    <li class="disabled"><a href="#">«</a> </li>
+				    <li><a href="#">1</a> </li>
+				    <li class="active"><a href="#">2</a> </li>
+				    <li><a href="#">3</a> </li>
+				    <li><a href="#">4</a> </li>
+				    <li><a href="#">5</a> </li>
+				    <li><a href="#">»</a> </li>
+				</ul>
+			</div>
+			<div class="body-right">
+				<img src="img/dajiating.png" class="body-right-haibao"/>
+				<div class="wyfb">我要发布</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<img src="img/header-logo.png" class="footer-logo"/>			
+				<div class="footer-nav">
+					<ul>
+						<li>首页</li>
+						<li>消息中心</li>
+						<li>病症管理</li>
+						<li>统计分析</li>
+						<li>个人中心</li>
+					</ul>
+					<p>Copyright © 2016依联体 粤ICP备63213542号-3</p>
+					<div><img src="img/tel.png"/>888-888-8888</div>
+				</div>
+				<img src="img/erweima.jpg" class="footer-ewm"/>
+			</div>
+		</footer>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/pintuer.js" type="text/javascript" charset="utf-8"></script>		
+		<script type="text/javascript">
+			$(function(){
+				$(".media-active").next("div").show();
+				$(".body-left li").click(function(){
+					$(this).addClass("media-active");
+					$(this).next(".media-active-panel").show();
+					$(this).siblings("li").next(".media-active-panel").hide();
+					$(this).siblings("li").removeClass("media-active");
+				});
+			});
+		</script>
+	</body>
+</html>

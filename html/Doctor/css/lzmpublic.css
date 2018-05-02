@@ -1,0 +1,562 @@
+body{min-width: 1200px;color: #323232;}
+input[type=radio]{position: relative; top: 2px;}
+header{border-bottom: 1px solid #E6E6E6;width: 100%;height: 60px;}
+header>div>div{height: 100%;overflow: hidden;}
+header>div{width: 1050px;margin: 0 auto;height: 60px;}
+header nav{overflow: hidden;float: left;height: 100%;width: 744px;margin-left: 70px;}
+header nav a{width: 120px;display: block;float: left;text-align: center;height: 100%;line-height: 60px;color: bl;}
+.colorOrange{ color: #FF6600;} 
+.colorGreen{ color: #00AA00;}
+.body{width: 960px;margin: 0 auto;overflow: auto;}
+.header-logo{overflow: auto;float: left;}
+.header-logo img{height: 50px;margin-top: 5px;}
+.header-operation{float: right;line-height: 50px;line-height: 60px;}
+.header-operation span:last-child{color: #999;}
+.header-operation i{}
+.headBar a:hover{border-top: 10px solid #13A045;border-left: 1px solid #ccc;border-right: 1px solid #ccc;color: #13a045;line-height: 42px;}
+.header-operation-right{float: right;line-height: 50px;line-height: 60px; width: 140px; position: relative;}
+.header-operation span:last-child{color: #999;}
+.header-now{color:#13A045;}
+
+.header-operation-right img{width: 40px;height: 40px;border-radius: 50%;position: absolute;top: 10px;}
+.header-operation-right h3{display: inline; right: 0px; width: 90px; right: 0px; position: absolute;top: 10px;color: #13a045;line-height: 24px;cursor: pointer;}
+.header-operation-right span{line-height: 14px;cursor: pointer; position: absolute; right:0px; bottom: 10px; margin:0px 5px;}
+
+
+header div nav a:hover{color: #13a045;} 
+.carousel img{max-width: 1200px;height: 600px !important;}
+.banner{width: 1200px;margin: 0 auto;}
+.clear{clear: both;}
+.qzyq{color:#00d8ff;}
+.qzyq:hover{background: #00d8ff; color: #fff;}
+.rcjc{color: #00bf44;}
+.rcjc:hover{background: #00bf44; color: #fff;}
+.sfjl{color: #1f6cec;}
+.sfjl:hover{background: #1f6cec; color: #fff;}
+.hyqq{color: #ef6a0f;}
+.hyqq:hover{background: #ef6a0f; color: #fff;}
+.fhdb{color: #999999;}
+.header-operation{position: relative;width: 100px;}
+.header-operation img{width: 40px;height: 40px;border-radius: 50%;position: absolute;top: 10px;}
+.header-operation h3{display: inline;position: absolute;top: 15px;color: #13a045;left: 50px;line-height: 24px;cursor: pointer;}
+.header-operation span{line-height: 14px;cursor: pointer; margin:0px 5px;}
+.fix-right{position: fixed;right: 30px;top:50%; margin-top: -125px; width: 50px;padding: 0px;background: #e6e6e6;}
+.fix-right div{border-bottom: 1px solid white;padding: 5px 5px;text-align: center;cursor: pointer;}
+
+footer{background: white;}
+footer>div{height: 200px;width: 1200px;margin: 0 auto;overflow: auto;}
+.footer-logo{height: 120px;margin-top: 40px;float: left;}
+.footer-nav{margin: 70px 0px 40px 70px;float: left;}
+.footer-nav>ul{list-style: none;padding: 0;overflow: auto;}
+.footer-nav>ul li{float: left;margin-right: 30px;}
+.footer-nav>p{margin: 10px 0px;color: #999999;}
+.footer-nav>div{color: #13a045;font-size: 18px;}
+.footer-nav>div img{vertical-align: top;margin-right: 10px;}
+.footer-ewm{float: right;height: 120px;margin-top: 40px;}
+
+
+/*fang code*/
+.pubPage{width:100%;overflow: auto;margin-top: 50px;margin-bottom:20px; text-align: center;}
+.pubPage a{width:25px; color: #666; font-weight: bold; font-size: 12px; font-family: arial; border-radius: 3px; height: 25px; line-height: 25px; display: inline-block; border:1px solid #dddddd; background: #f2f2f2; color: #6b6b6b;}
+.pubPage a:active{background: #00bf44; color: #fff;}
+.pubPage a:hover{background: #55ee8b; color: #fff;}
+.eeebody{width:100%; overflow: auto; min-height: 500px; background: #f5f2f2; padding-top: 20px; padding-bottom: 20px;}
+
+/*科普中心列表页*/
+.leftItemBar{width:160px; overflow: auto;float: left;}
+.message_menu{width:100%; overflow: auto; background: #fff;}
+.message_menu_item{width:100%; position: relative; text-align: center;border-bottom:1px dashed #ccc; font-size: 16px; overflow: auto;padding-top: 10px; padding-bottom: 10px;}
+.message_menu_item.active{ background: #00bf44; color: #fff;}
+.message_menu_item span{float: right;}
+.message_menu_item span.newMessage{padding-top: 10px; position:absolute;   padding-left: 10px; top:15px; right: 10px; background: #FF0000; border-radius:50% ;}
+.message_menu a:last-child .message_menu_item{border-bottom: 0px;}
+.advert_list_under{width:100%; margin-top: 20px; background: #fff; }
+.advert_title{ width: 100%; overflow: auto; margin: 0px auto; line-height: 40px; text-align: center; }
+.advert_title div{width:50%; cursor: pointer; float: left; background: #ccc; color: #333;}
+.advert_title div.active{ background: #fff; color: #009900;}
+.advert_list{width:100%; overflow: auto;}
+.advert_list:last-child{display: none;}
+.advert_product_two{width:90%; padding-bottom: 10px; margin:0px auto;text-align: center; overflow: auto ; margin-top:10px;}
+.advert_product_two img{width:100%;}
+.advert_products{width:90%; padding-bottom: 10px; margin:0px auto;text-align: center; overflow: auto ; margin-top:10px;}
+.advert_products img{width:100px; height: 100px;}
+.advert_products h5{text-align: left; margin-top: 8px; margin-bottom: 3px;}
+.advert_products .advert_products_price{float: left; color: #F72626;}
+
+.message_under{  background: #fff; margin-left:23px; float: left; width:600px; overflow: auto; padding: 20px; box-sizing: border-box;}
+.message_under_title{width:50%; margin-bottom: 10px; color: #808080; float: left; font-size:30px; font-family: "宋体"; font-weight: bold;}
+.message_search {width:200px; overflow: auto; float: right; }
+.message_hr{margin-bottom:1px; width:100%; overflow: auto;}
+.message_hr button{margin-bottom:15px;}
+.message_tap_bar{border-top:1px dashed #ccc; padding-top: 10px;  background: #fff; width:100%; margin: 0px auto; margin-bottom:10px; overflow: auto; border-bottom: 1px dashed #ccc; }
+.message_tap_bar .tap{width:auto; margin-bottom: 10px; margin-right: 10px; float: left; padding:3px 10px; color: #999;  border: 1px solid #ccc;}
+.message_tap_bar .tap.hot{border-color:#ef6a0f; color: #ef6a0f;}
+.message_tap_bar .tap.active{border-color:#13a045; color: #13a045; background: #daf7e4;}
+.message_content_list{width:100%; overflow: auto;padding-top:10px;}
+.message_one{width:100%; padding: 10px;  overflow: auto;border-bottom: 1px solid #ccc;}
+.message_one h3{margin-bottom: 20px;}
+.message_one img{width:35%; overflow: auto; float:left;}
+.message_detail{width:60%; overflow: auto; float: right;}
+.message_detail_p{width:100%; overflow: auto; margin-bottom: 20px;}
+.message_detail_p .video{float: right; color: #13a045;}
+.message_detail_p span{margin-right: 10px; color: #999; font-size: 14px;}
+.message_detail_p span:first-child{color: #13a045;}
+.message_detail_val{width:100%; overflow:hidden; height: 105px; text-indent:25px; line-height: 21px; font-size: 12px; color: #999;}
+
+.rightAdvert{float:right; width:155px;}
+.rightAdvert img{width: 100%;}
+.rightAdvertBtn{width:100%; margin-top: 15px; font-size: 18px; text-align: center; background: #FF6600; color: #fff; padding-bottom: 10px; padding-top: 10px;}
+/*科普中心，列表详细*/
+.detail_back{width:100%; text-indent: 10px; cursor: pointer; overflow: auto;padding-top: 10px;line-height: 18px; padding-bottom: 10px; font-size: 14px; color: #999;}
+.detail_back span{margin-right: 5px;font-size: 14px; }
+.message_detail_con{
+    margin-bottom: 30px;
+	width:100%; padding: 30px; box-sizing: border-box; overflow: auto;background: #fff;
+}
+.product_list_con{
+    margin-bottom: 30px;
+	width:100%; padding: 20px; box-sizing: border-box; overflow: auto;background: #fff;
+}
+
+.message_detail_other{width:100%; overflow: auto; margin-top:25px;}
+.message_detail_other h1{  	font-family: "宋体"; font-weight: bold; }
+.message_detail_other .video{float: left; margin-left: 30px; color: #13a045;}
+.message_detail_other span{margin-right: 10px; float: left; color: #999; font-size: 14px;}
+.message_detail_other span:first-child{color: #13a045;}
+.message_detail_con_val{width:100%; overflow: auto; margin-top: 20px;}
+.fixed-bottom-right{width:100px;  height:32px; overflow:hidden; transition: all 0.5s; background: #fff;
+-moz-transition: all 0.5s;	/* Firefox 4 */
+-webkit-transition: all 0.5s;	/* Safari 和 Chrome */
+-o-transition: all 0.5s; border: 1px solid #ccc; text-align: center; color: #000; right:10px; bottom:10px; box-shadow: 2px 2px 2px #ccc;}
+.fixed-bottom-right .talkNow{width:100%; cursor: pointer; line-height: 32px; overflow: auto;}
+.fixed-bottom-right.active{border: 1px solid #00AA00; width:150px; height: inherit; overflow: auto;}
+.newCall{width:100%; line-height: 32px; text-align: left;}
+.newCall span.point{ margin-left: 10px; margin-right: 5px; border-radius: 50%; width:10px; height: 10px; position: relative; top: 0px; display: inline-block;   background:red;}
+.newCall a{color: #000;}
+.newCall:hover{background:rgb(126,206,244); }
+.newCall:hover span{color: #fff;}
+.callClose{ float: right; line-height: 20px; margin-right: 5px;}
+
+
+.list_full_right{  background: #fff; margin-left:23px; float: left; width:760px; overflow: auto; padding: 20px; box-sizing: border-box;}
+.createGroup{float: right; background:#FF6600; color: #fff; border:1px solid #FF6600 !important; height: 35px;  box-shadow:none !important; width:180px; font-family: "宋体"; font-size: 20px;}
+.list_full_con{
+	width:100%; border-top:1px dashed #ccc; overflow: auto;
+}
+
+.list_group_one{width:23%; margin-right: 2%; float: left; overflow: auto;  box-sizing:border-box; margin-top:20px;}
+.list_group_one:nth-child(4n){ margin-right: 0px;}
+.list_group_one img{width:100%; border: 1px dashed #ccc; padding: 5px; box-sizing: border-box;}
+.list_group_o_name{width:100%; overflow: auto; margin-top: 5px; font-size:14px;}
+.list_group_o_count{width:100%;  text-align:left; color: red; font-size:12px;}
+
+.friendOne{width:100%; padding-bottom: 18px; padding-top: 15px; overflow: auto; border-bottom: 1px solid #ccc;}
+.friendOne img{width:60px; height: 60px; float: left; margin-right: 10px; border-radius: 50%;}
+.userOther{width:500px; float: left; color: #999; overflow: auto; font-size: 12px;}
+.userOther div{line-height:20px; }
+.userOther div span{margin-right: 10px;}
+.userOther .name{color: #ef6a0f; font-size: 14px;}
+.userCtrl{ margin-top: 10px; font-size: 12px; float:right;width:60px; overflow: auto;}
+.userCtrl *{width:100%; cursor: pointer; display: block; color: #808080;}
+.article_one,.article_two{width:100%; border:1px solid #fff ;  padding-top: 10px; border-bottom: 1px solid #eee; padding-bottom: 10px;  text-align: left; overflow: auto;  box-sizing:border-box;}
+.article_img {width:100px; max-width: 30%; margin-left: 10px; margin-right:15px; float: left;}
+.article_img>img{width:100%; margin-top: 10px;}
+.article_name{width:70%; height: 25px; line-height: 25px; color: #000; font-size: 13px; float: left; overflow: hidden;  }
+.article_one .editSource{color: #5ac5f3; display: none;}
+.article_one:hover .editSource{display:inline; cursor: pointer;}
+/*.article_one .article_name{ height: 65px;}*/
+.article_other{width:30%;font-size:12px;float: left; text-align: right; line-height: 25px; color: #666;}
+.article_other span{ margin-right: 10px; color: #999; }
+.article_other span:first-child{color: #00AA00;}
+.article_two .article_name{width:95%; margin-left: 10px;    margin-top: 10px;}
+.article_two .article_other{width:95%; margin-left: 10px;}
+.setTop{width:100%; background: #fff; color: #fff; margin-bottom: 10px; height: 30px; line-height: 30px;}
+.setTop span{float: right; margin-right: 10px; cursor: pointer;}
+
+
+/*我的预约*/
+.bookingType{width:300px; margin:20px auto; border:2px solid #00AA00 !important; background: #fff; border-radius: 5px; height:40px;}
+.btCont{width:50%; cursor: pointer; height:100%; font-size:18px; float: left; text-align: center; line-height: 36px; }
+.btCont.active{background: #00AA00; color: #fff;}
+
+.booking_normal_list{width:100%; overflow: auto;}
+.booking_normal_list .userOther{width:400px;}
+
+.noticeOne{width:100%; overflow: auto; padding-left: 20px; padding-bottom: 5px; border-bottom: 1px solid #ccc; box-sizing: border-box; padding-top:15px; border-bottom:1px solid 1px;}
+.noticeOneTip{width:90%;  overflow: auto; font-size: 14px; color: red; margin-bottom: 10px;}
+.noticeOneVal{width: 90%; text-indent: 30px; overflow: auto; font-size: 12px; margin-bottom: 10px;}
+.noticeOneTime{width:100%; text-align: right; color: #999; font-size: 12px;}
+
+
+.orangeButton{width:200px; cursor: pointer; box-shadow: none; border:none; height: 40px; margin: 0px auto; text-align: center; line-height: 40px; font-size: 18px; background: #ef6a0f; color: #fff;}
+
+
+/*添加科普*/
+.addContentBtn{width:200px; cursor: pointer; height: 50px; margin: 0px auto; text-align: center; line-height: 50px; font-size: 18px; background: #ef6a0f; color: #fff;}
+.addContentTitle {
+				width: 100%;
+				margin-bottom: 20px;
+				font-family: "宋体";
+				overflow: auto;
+				font-size: 24px;
+				color: #ef6a0f;
+			}
+			
+			.addTwColPub {
+				width: 100%;
+				overflow: auto;
+				margin-bottom: 10px;
+			}
+			.addTwColPub textarea{width:100%;border-color: #eee; overflow: auto; resize: none; min-height: 300px; padding:10px;}
+			.addTwColPub input{text-indent: 5px; border:1px solid #eee;}
+			
+			.addTipPub {
+				width: 15%;
+				text-indent: 15px;
+				overflow: auto;
+				color: #323232;
+				font-size: 12px;
+				float: left;
+				line-height: 25px;
+			}
+			
+			.addTipVal {
+				width: 85%;
+				overflow: auto;
+				float: left;
+			}
+			
+			.addTipVal input[type=text] {
+				width: 100%;
+				height: 28px;
+			}
+			
+			.addImgUnder {
+				background: #f2f2f2;
+				padding: 20px 15px;
+				box-sizing: border-box;
+				width: 100%;
+				overflow: auto;
+			}
+			
+			.addImgBtn {
+				width: 70px;
+				float: left;
+				cursor: pointer;
+				height: 70px;
+				background: url(../img/add_img_icon.jpg) no-repeat;
+				background-size: 100%;
+			}
+			
+			.addImgBtn:hover {
+				background: url(../img/add_img_icon_h.jpg) no-repeat;
+				background-size: 100%;
+			}
+			
+			.addUploadImg {
+				width: 70px;
+				overflow: auto;
+				float: left;
+				margin-right: 10px;
+			}
+			
+			.addUploadImg .deleteImg {
+				display: none;
+				cursor: pointer;
+				text-align: center;
+				line-height: 25px;
+			}
+			
+			.addUploadImg:hover .deleteImg {
+				display: block;
+			}
+			
+			.addUploadImg img {
+				width: 100%;
+				height: 70px;
+			}
+			
+			.sendPositionCon {
+				width: 100%;
+				overflow: auto;
+				padding: 10px;
+				background: #f1f1f1;
+				border: 1px solid #ccc;
+				border-radius:3px;
+				margin-bottom:20px;
+			}
+			.sendPositionCon .form-group{
+				padding-bottom: 0px;
+			}
+			.sendPositionCon h5 {
+				margin-bottom: 5px;
+			}
+			
+			.sendPsCon {
+				width: 100%;
+				overflow: auto; margin-bottom: 10px;
+			}
+			
+			.sendPsConTip {
+				width: 7%;
+				float: left;
+				overflow: auto;
+			}
+			
+			.sendPsConVal {
+				width: 90%;
+				float: left;
+				overflow: auto;
+			}
+			
+			.sendPsConVal>div {
+				float: left;
+				cursor: pointer;
+				color: #1f6cec;
+				margin-right: 10px;
+			
+			}
+			.sendPsConVal>div.active {
+				color: #13a045;
+			}
+			.sendPsConVal>div:hover {
+				color: #13a045;
+			}
+			.sendPsSelect{width:200px; position: relative; float: left; height: 30px; border: 1px solid #ccc;}
+			.sendPsSelect>input{border: 0px !important; width: 170px; float: left; height: 28px; border-right: 1px solid #ccc !important;}
+			.sendPsSelect>input[type=text]:read-only{background: #fff; cursor: pointer;}
+			.sendPsSelect span{float: left; position: relative; left: 10px; top: 5px;}
+			.sendToPatient{width:500px; margin-left: 20px; float: left;overflow: auto; }
+			
+			
+			.sendToPatient>.tips{width:15%; line-height: 25px; overflow: auto; float: left;}
+			.sendToPatient>.patientList{width:85%; overflow: auto; float: left;}
+			.sendToPatient>.patientList div{color:#13a045; line-height: 25px; width: auto; float: left; margin-right: 10px; cursor: pointer;}
+			.sendToPatient>.patientList div:hover{ color: #ef6a0f;}
+			
+			.searchShowUnder{width: 200px; display: none; padding-bottom: 5px;   border: 1px solid #ccc; top: 30px; position:absolute; background: #fff; z-index: 30; overflow: auto; max-height: 270px;}
+			.searchShowUnder>input[type=text]{width:98%; border: 1px solid #ccc; height: 28px; display: block; margin: 2px auto;}
+			.searchClose{ cursor:pointer; line-height: 23px; color:#666; text-align: center; border: 1px solid #ccc; width:96%; margin: 0px auto; border-radius: 3px; margin-top: 5px; height: 25px; background: #f1f1f1; }
+			.searchShowUnder .searchBtns{ cursor: pointer; width:20px; color: #ccc; height: 20px; top: 5px; position: absolute;right: 4px;}
+		
+			.searchResultShow{width:100%; overflow: auto;max-height: 190px;}
+			.searchResultShow .sresultOne{
+				width: 100%; line-height: 25px; overflow: hidden; height: 25px;
+				padding-left:10px; padding-right: 10px;box-sizing: border-box;
+			}
+			.sresultOne:hover{background: #7ecef4; color: #fff;}
+			.searchResultShow .sresultOne span{
+				float: left;
+			}
+			.searchResultShow .sresultOne span.setResult{
+				float:right; cursor: pointer;
+			}
+			
+
+/*好友信息*/
+
+.friendMessage{
+	display: block !important;
+	min-height: 400px;
+	width:760px !important; max-height: 750px; background: #fff; overflow:hidden; margin-left:-380px !important;
+}
+.friendMessageLeft{
+	width:190px;background:#d0edfb ;
+	height: 100%;
+	float: left;min-height: 400px;
+	position: relative;
+	text-align: center;
+	box-shadow: 3px 0px 5px #ccc;
+}	
+.friendMessageLeftItem li.active{background: #7ecef4; color: #fff !important;}
+.friendMessageLeftItem li.active a{color: #fff;}
+.friendMessageLeft img{width:100px; border-radius: 50%; margin-top: 30%; margin-bottom: 20px; }	
+.friendMessageLeft h1{font-family: "宋体"; font-weight: bold;}
+.friendMessageLeft ul{padding: 0px; width: 100%; position:absolute;  bottom: 50px;}
+.friendMessageLeft ul li{list-style: none; line-height: 30px; font-size: 12px; }
+.friendMessageLeft ul li span{margin-right:5px ;font-size: 18px; }
+.friendMessageRight{width:540px; float: right; height: 100%; overflow: auto;min-height: 400px;}
+.friendMessageRight [data-friendtype]{display: none;}
+.friendMessageRight [data-friendtype]:first-child{display: block;}
+.friendMessageRight .friendDetailCon{width:100%; padding-bottom:40px; height: 100%; overflow: auto; box-sizing: border-box; padding-left: 5%; padding-top:40px;font-size: 12px;}
+.friendDetailCon tr td:first-child{color: #999; font-size: 12px; line-height: 25px;}
+.friendDetailCon table{margin-bottom: 50px; width:95%}
+
+
+.my_group_list{width:100%;margin: 0px auto;height: 100%; display: none;  overflow: auto; padding-bottom: 10px;}
+.my_group_one{width:98%; padding: 5px; overflow: auto; float: left; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;  margin-top: 10px;}
+.my_group_one_img{width:80px; height: 80px; float: left;}
+.my_group_o_con{width:67%; margin-left: 10px; overflow: auto; float: left;}
+.my_group_o_con p{color: #000; margin-bottom: 5px;}
+.my_group_o_con p span{float: right; color: #666; margin-left: 15px; font-size: 12px;}
+.my_group_o_c_val{width:100%; overflow:hidden; height: 40px; font-size: 12px;}
+.my_group_invoke{ font-weight: 12px; float: right;  margin-top: 30px; margin-right: 7px; cursor: pointer;}
+.my_group_invoke:hover{ color: #1f6cec;}
+
+.windowClose{position: absolute; width:25px; height: 25px; font-size: 26px; right:20px; cursor: pointer; z-index: 3;}
+
+
+/*商品列表*/
+.product_banner{width:100%; overflow: auto;}
+.product_banner img{width: 100%;}
+
+
+/*病症模板*/
+	
+.demo_under_con{
+    margin-bottom: 30px;
+	width:100%;  box-sizing: border-box; background: #fff;
+}
+.demoContentTitle{width:100%; font-size: 28px; color: #666; border-bottom: 1px solid #ccc; font-family: "宋体";  height: 80px; line-height: 80px; text-indent:30px;}
+.demoContentUnder{width:100%; position: relative;overflow: auto;}
+.demoContentLeft{width:30%; position: absolute;z-index: 1; height: 100%;background: #ebebeb;}
+.demoContentItem{width:100%; background: #ebebeb; color: #000; height: 46px; line-height:46px; text-indent:50px; overflow: auto;}
+
+.demoContentItem.active{color: #fff; background: #ff8d1d;}
+.demoContentArrow{width:14px; height: 100%; position:relative; float: right;}
+.demoContentArrow div{
+	width:100%; background: #ebebeb; color: #000; height: 46px;  overflow: auto;
+}
+.demoContentArrow div span.active{line-height:46px; width: 0; margin-top:15px; float: right; position:absolute;z-index: 7; margin-left: 0%;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 14px solid #fff;
+    border-bottom: 7px solid transparent;}
+.demoContentRight{width:70%; position: relative; z-index: 5; float: right; min-height: 400px;  height: 100%; overflow: auto; box-shadow:-2px 0px 5px rgba(0,0,0,0.2); padding-bottom: 20px;}
+.disease_row{width:90%; margin-left:5%; overflow: auto; margin-top:10px;}
+			.disease_demo_btn{font-size: 14px; padding:5px 10px; color: green}
+/*选择后*/
+.addNewSelectVal{width:100%; margin:0px auto; overflow: auto;}
+			.addNewTip{width:70px; overflow: auto; line-height: 30px; float: left;}
+			.addNewValList{width:85%; overflow: auto; float: left;}
+			.addNewValOne{width:100%;  line-height: 30px; overflow: auto; color: #0099CC;}
+			.addNewValOne span{ color: #999;}
+			
+
+
+
+/*弹窗*/
+			#openWindow{width:100%; display: none; position: fixed;top: 1px; height: 100%; z-index: 500; background: rgba(0,0,0,0.6);}
+			#messageWindow{width:100%; display: none; position: fixed;top: 1px; height: 100%; z-index: 500; background: rgba(0,0,0,0.6);}
+			#rightWindow{width:100%; display: none; position: fixed;top: 1px; height: 100%; z-index: 500; background: rgba(0,0,0,0.6);}
+			
+			.contentWindow{width:600px; background: #fff; display: none; overflow: auto; box-sizing: content-box; position: absolute; left: 50%; margin-left:-300px;  margin-top: 100px;}
+			.windowTitle{width:100%; text-indent: 10px; line-height: 20px; background: #ef6a0f; color: #fff; padding-top: 10px; padding-bottom: 10px; box-sizing: border-box; overflow: auto;}
+			.windowTitle .close{float: right; margin-right: 10px; position: relative; margin-top: -3px; }
+			.windowBody{background: #f1f1f1; width: 100%; padding-bottom:5px; }
+			.windowBody label span{color: red;}
+			.createGroupBtn{width:150px; text-align: center; height: 40px;  background: #FF6600; color: #fff; margin:20px auto 0px auto; line-height: 40px; font-size: 16px;}
+			.search_friend_list{width:92%;  padding-top:20px;  margin-left: 4%; margin-right: 4%; overflow: auto;}
+			.search_friend_list p{margin: 0px;}
+			.search_friend_one{width: 32%; margin-bottom: 10px; float: left; margin-right: 2%; height: 70px; background: #fff;}
+			.search_friend_one:nth-child(3n){margin-right: 0px;}
+			.search_friend_one img{width:50px; float: left; height: 50px; margin-top: 10px; margin-left: 10px; border-radius: 50%;}
+			.search_user{width:90px;margin-left: 10px; margin-top: 5px; overflow: auto; float: left;}
+			.search_user .name{width:100%; overflow: hidden; line-height: 20px; font-size: 12px; color: #FF6600;}
+			.search_user .other{width:100%; overflow: auto; line-height: 20px; color: #ccc; font-size: 10px;}
+			
+			
+			
+			.friendHr{width:95%; overflow: auto; margin: 0px auto; margin-top:30px; padding:30px 20px; box-sizing: border-box;  border-top: 1px dashed #ccc;}
+			.friendHr table{float: left; font-size: 12px;}
+			.friendHr table tr td:first-child{ color: #999;}
+			.addFriendBtn{float: right; margin-top:60px; margin-right: 20px;}
+			
+			.message_content_list{/*display: none;*/}
+			
+			
+			.rightfriendOne{width:100%; background: #fff; padding-bottom:13px; padding-top: 10px; margin-bottom: 10px; overflow: auto; border-radius: 5px; border: 1px solid #ccc;}
+.rightfriendOne img{width:60px; margin-left: 5px; height: 60px; float: left; margin-right: 10px; border-radius: 50%;}
+.rightuserOther{width:370px; float: left; color: #999; overflow: auto; font-size: 12px;}
+.rightuserOther div{line-height:20px; }
+.rightuserOther div span{margin-right: 10px;}
+.rightuserOther .name{color: #ef6a0f; font-size: 14px; line-height: 25px;}
+.rightuserCtrl{ margin-top: 15px; font-size: 12px; float:right;width:60px;  overflow: auto;}
+.rightuserCtrl *{width:100%; cursor: pointer; display: block; line-height: 25px; text-align: center; color: #808080;}
+.rightCtrlLine{margin-top: 8px; text-align: left; margin-right: 10px;}
+.rightListTip{margin-bottom: 10px !important;}			
+/*病症科普弹窗*/
+.search_science_list{width:100%; overflow: auto; }
+.search_science_one{width:100%; overflow: auto;border-bottom: 1px solid #ccc;}
+.search_science_one:hover{background: #f2fbff; }
+.search_science_one:hover>.other{display: block; color: #4cc3f8;}
+.search_science_one>.name{width:80%; line-height: 35px;  text-indent: 10px; overflow:hidden; float: left;}
+.search_science_one>.other{width:17%; cursor: pointer; display: none;  line-height: 35px; float: left; text-align: right; }
+.windowBody	.field{margin-left: 50%; width:50%; }
+
+.search_science_three{width:100%; padding-top: 10px; padding-bottom: 10px; overflow: auto; margin-top: 5px; border: 1px solid #fff; line-height: 30px;}
+.search_science_three>.name{width:65%; float: left; overflow: auto;text-indent: 10px; color: #646464;}
+.search_science_three>.name img{width:30px; margin-left: 10px; margin-right: 10px; } 
+.search_science_three>.price{width:15%; float: left; overflow: auto; text-align: center; color:red; }
+.search_science_three>.other{width:17%; float: right; position:relative;  overflow: auto; text-align: center; color:#4a7bf7; display: none;}
+.search_science_three:hover{ border-color:#7ecef4;}
+.search_science_three:hover>.other{display: block;}
+.search_science_three .other.active{display: block !important;}
+
+
+/**/
+	.addNewValTwo span{line-height: 15px;} 
+			.addNewValTwo  img{width:30px; vertical-align: middle; line-height: 30px; position: relative; margin-left: 5px;}
+			.addNewValTwo div{float: left; overflow: auto; line-height: 32px;}
+			.addSupport_why{width:300px; display: none; margin-left: 45%; border: 1px solid #999; margin-top: 30px; background: #f7f7f7; border-radius: 5px; overflow: auto; position:absolute; z-index: 50;}
+			.addSupport_why .addSupportVal{width: 100%; border: none; line-height: 20px; background: none; resize: none; padding: 5px; overflow: auto; margin: 0px;}
+			.addSupport_why p{text-align: center; font-size: 12px; line-height: 20px; margin-bottom:5px;}
+			.addSupport_why p button{margin-left:5px; color: #b2b2b2; margin-right: 5px; background:none; border: none;}
+			.addSupport_why p button:hover{color:#4f7ff7;}
+			
+			.addSupport_sure{width:100px; height: 40px; background: #33BBDD; color: #fff; border: none;}
+			.addSupport_cancel{width:100px; height: 40px; background: #999; color: #fff; border: none; margin-right: 10px;}
+			.addNewShopList{width:60%; line-height: 30px; display: inline-block; overflow: auto;}
+			.showText{float: right !important;cursor: pointer;}
+			
+			.choise_support_shop{padding: 10px; width:100%; overflow: auto; }
+			.choise_support_shop div{float: left; overflow: auto; line-height: 30px;}
+			.choise_support_shop div img{width:30px;}
+			.choise_support_shop div img.active{border:2px solid #0066CC;}
+			.choise_support_detail{width:97%; margin: 0px auto; overflow: auto; margin-bottom: 10px;}
+			.choise_support_detail table{width:100%; line-height: 30px;}
+			.choise_support_detail table td{border-color: gray; }
+			.choise_support_detail table tr{border-color: gray;}
+			.choise_support_detail table th{border-color: gray;}
+			
+
+.disease_input{width:100%; overflow: auto; margin-bottom:15px;}
+.disease_input div{float: left; overflow: auto;line-height: 30px;  width: 20%; text-align: center;}
+.disease_input input{width:40%; line-height: 30px; border:1px solid #eee; }
+.base_val{width:100%; resize: none;min-height: 300px; padding: 10px; font-size: 14px; border-color: #eee; overflow: auto; max-height: 300px;}
+
+.left_advert_more_line{display: inline-block; width: 100%; overflow: auto; font-size: 14px; padding-right: 5px; padding-top: 10px; padding-bottom: 5px; text-align: right; color:#0000FF;}
+
+
+/*统计页面*/
+.statistics_under{  background: #fff; margin-left:23px; float: left; width:750px; overflow: auto; padding: 20px; box-sizing: border-box;}
+.statist_tab_search{width:100%; overflow: auto; border: 1px solid #ccc; margin-top: 20px;}
+.statist_tab_search tr{height:35px;text-align: center;}
+.statist_tab_search tr td{vertical-align: middle;}
+.statist_tab_search tr:first-child{height:35px; text-align: left; text-indent: 10px;}
+.statist_tab_search tr:nth-child(2){background: #116644; color: #fff;}
+.statist_tab_result{width:100%; overflow: auto; border: 1px solid #ccc; border-top:none;}
+.statist_tab_result tr{height:35px;text-align: center;}
+.statist_tab_result tr td{vertical-align: middle;}
+.statist_tab_result td:nth-child(1){width:33%;}
+.statist_tab_result td:nth-child(2){width:34%;}
+.statist_tab_result td:nth-child(3){width:33%;}
+.statistics_under .bread{font-size: 14px; margin-bottom: 0px;}
+
+.statist_tab_sale_detail{width:100%; overflow: auto; border: 1px solid #ccc; margin-top: 20px;}
+.statist_tab_sale_detail tr{height:35px;text-align: center;}
+.statist_tab_sale_detail tr td{vertical-align: middle; width:25%;}
+.statist_tab_sale_detail tr:first-child{background: #116644; color: #fff;}
+
+
+
+.statist_tab_sale_search{width:100%; overflow: auto; border: 1px solid #ccc; margin-top: 20px;}
+.statist_tab_sale_search tr{height:35px;text-align: center;}
+.statist_tab_sale_search tr td{vertical-align: middle; width: 25%;}
+.statist_tab_sale_search tr:first-child{height:35px; text-align: left; text-indent: 10px;}
+.statist_tab_sale_search tr:nth-child(2){background: #116644; color: #fff;}
+.statist_tab_sale_result{width:100%; overflow: auto; border: 1px solid #ccc; border-top: none; }
+.statist_tab_sale_result tr{height:35px;}
+.statist_tab_sale_result tr td{vertical-align: middle; width: 25%; text-align: center;}
+.statist_tab_sale_result tr:first-child{height:35px; text-align: left; }
+.statist_tab_sale_result tr:nth-child(2){background: #116644; color: #fff;}

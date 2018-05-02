@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>依联体</title>
+		<link rel="stylesheet" type="text/css" href="css/pintuer.css" />
+		<link rel="stylesheet" type="text/css" href="/css/lzmpublic.css" />
+
+        <link rel="stylesheet" href="../css/myPatient.css" />
+		<script src="js/uedit/third-party/jquery-1.10.2.js"></script>
+		<script src="js/disease-my.js"></script>
+		<style>
+		   .searchList{width:100%; background: #fff;  overflow: auto; padding:10px 15px 15px 15px; border-bottom: 1px solid #f1f1f1;}
+		   .searchList span{margin-right: 10px;}
+		</style>
+	</head>
+
+	<body>
+		<header id="header">
+			<div>
+				<div class="header-logo"><img src="../img/header-logo.png" /></div>
+				<nav class="headBar">
+					<a href="#">首页</a>
+					<a href="#">消息中心</a>
+					<a href="#">病症管理</a>
+					<a href="#">统计分析</a>
+					<a href="#">个人中心</a>
+				</nav>
+				<div class="header-operation-right">
+					<img src="../img/touxiang.png" />
+					<h3>李医生</h3>
+					<span class="logout">退出</span>
+				</div>
+			</div>
+		</header>
+       <div class="fix-right">
+			<div class="qzyq">群组邀请</div>
+			<div class="hyqq">好友请求</div>
+			<div class="rcjc">日常检测</div>
+			<div class="sfjl">随访记录</div>
+			<div class="fhdb">
+				<a href="#header">返回顶部 </a>
+			</div>
+		</div>
+
+       <div class="csl-container">
+       
+       	   <div class="call-div"><a href="#">&lt;<span>返回</span></a></div>
+       	  
+       	   <div class="cls-main">
+                 <div class="main-top">
+                 	<div class="left-top">
+                 		<div class="left-image"><img src="../img/user.jpg" alt="" /></div>
+                 		<div class="left-txt">
+                 			喜洋洋<span>/</span>VVIP病人<span>/</span>皮肤病
+                 		</div>
+                 		<div class="left-date">
+                 			<span>首次接待于：2016-70-28 14:50</span>
+                 		</div>
+                 		<div class="left-btn">
+                 			<div class="btn-one" id="one_Diagnosis"><a href="#">会诊</a></div>
+                 	        <div class="btn-tow" id="tow_Diagnosis"><a href="#">转诊</a></div>
+                 		</div> 
+                 	</div>
+                 	<div class="right-top">
+                 		<ul>
+                 			<li><span>姓名：</span>喜洋洋<em>VVIP</em></li>
+                 			<li><span>性别：</span>男</li>
+                 			<li><span>年龄：</span>22</li>
+                 			<li><span>职业：</span>喜洋洋</li>
+                 			<li><span>地区：</span>喜洋洋</li>
+                 			<li><span>家族病史：</span>喜洋洋</li>
+                 			<li><span>不良嗜好：</span>喜洋洋</li>
+                 			<li><span>电话：</span>喜洋洋</li>
+                 			<li><span>微信：</span>喜洋洋</li>
+                 			<li><span>邮箱：</span>喜洋洋</li>
+                 			<li><span>QQ：</span>喜洋洋</li>
+                 		</ul>
+                 	</div>
+
+                </div> 
+                <div class="main-record">
+                	<div class="record-title">会诊记录</div>
+                	<div class="record-ul">
+                		<ul>
+                			<li>医生在发起会诊时的命名-2016-01-01 14:26 <a href="#">查看详情</a></li>
+                			<li>医生在发起会诊时的命名-2016-01-01 14:26 <a href="#">查看详情</a></li>
+                			<li>医生在发起会诊时的命名-2016-01-01 14:26 <a href="#">查看详情</a></li>
+                			<li>医生在发起会诊时的命名-2016-01-01 14:26 <a href="#">查看详情</a></li>
+                			<li>医生在发起会诊时的命名-2016-01-01 14:26 <a href="#">查看详情</a></li>
+                			<li>医生在发起会诊时的命名-2016-01-01 14:26 <a href="#">查看详情</a></li>
+                		</ul>
+                				
+					<div class="pubPage list-a">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">...</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+							
+                	</div>
+                </div>
+                <div class="daily-div">
+                	<div class="daily">
+                		<div class="daily-title"><span>日常监测</span><a href="#">更多&gt;&gt;</a></div>
+                		<div class="daily-main">
+                			<span>暂无</span>
+                		</div>
+                	</div>
+                	<div class="daily">
+                		<div class="daily-title"><span>日常监测</span><a href="#">更多&gt;&gt;</a></div>
+                		<div class="daily-main">
+                			<span>暂无</span>
+                		</div>
+                	</div>
+                </div>
+                 <div class="main-record">
+                	<div class="record-title">聊天记录</div>
+                	<div class="record-ul">
+                		<ul>
+                			<li>李振丽医生 <em>痤疮</em>2016/08/16 14:26<a href="#">查看详情</a></li>
+                			<li>李振丽医生 <em>痤疮</em>2016/08/16 14:26<a href="#">查看详情</a></li>
+                			<li>李振丽医生 <em>痤疮</em>2016/08/16 14:26<a href="#">查看详情</a></li>
+                			<li>李振丽医生 <em>痤疮</em>2016/08/16 14:26<a href="#">查看详情</a></li>
+                			<li>李振丽医生 <em>痤疮</em>2016/08/16 14:26<a href="#">查看详情</a></li>
+                		</ul>
+                				
+					<div class="pubPage list-a">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">...</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+					
+							
+                	</div>
+                </div>
+                <div class="main-floot">
+						<div class="floot-record">
+							<div class="floot-title">用药记录</div>
+							<div class="floot-ol">
+								<ol>
+									<li><span>药药药药药</span></li>
+								    <li><span>药药药药药</span></li>
+								    <li><span>药药药药药</span></li>
+									<li><span>药药药药药</span></li>
+									<li><span>药药药药药</span></li>
+									<li><span>药药药药药</span></li>
+								</ol>
+							</div>
+						</div>
+						<div class="floot-record">
+							<div class="floot-title">用药记录</div>
+							<div class="floot-ol">
+								<ol>
+									<li><span>药药药药药</span></li>
+								    <li><span>药药药药药</span></li>
+								    <li><span>药药药药药</span></li>
+									<li><span>药药药药药</span></li>
+									<li><span>药药药药药</span></li>
+									<li><span>药药药药药</span></li>
+								</ol>
+							</div>
+						</div>
+			  </div>
+       	   </div>
+       	  
+       	    
+       </div>
+       
+     
+
+		<footer>
+			<div>
+				<img src="../img/header-logo.png" class="footer-logo" />
+				<div class="footer-nav">
+					<ul>
+						<li>首页</li>
+						<li>消息中心</li>
+						<li>病症管理</li>
+						<li>统计分析</li>
+						<li>个人中心</li>
+					</ul>
+					<p>Copyright © 2016依联体 粤ICP备63213542号-3</p>
+					<div><img src="../img/tel.png" />888-888-8888</div>
+				</div>
+				<img src="../img/erweima.jpg" class="footer-ewm" />
+			</div>
+		</footer>
+		
+		
+		<!--遮罩层-->
+		<div class="mask">
+			
+		</div>
+		<!--弹窗1-->
+		<div class="Popup-one">
+			<div class="query-title">会诊查询<a href="#" class="close_one">×</a></div>
+			<div class="query-ipt"><input type="text" /></div>
+			<div class="information-container">
+                    	<ul>
+                    		<li>
+                    			<div class="infImage"><img src="../img/user.jpg" alt="" /></div>
+                    			<div class="infTxt">
+                    				<p>喜洋洋<span>VVIP</span></p>
+                    				<p>签名简介签名简介签名简介签名简介签名简介签名简介<a href="#" class="Popup-a Popup-a1">邀请会诊</a></p>
+                    				<p><span>广东广州</span><span>皮肤科</span><span>18554296512</span></p>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="infImage"><img src="../img/user.jpg" alt="" /></div>
+                    			<div class="infTxt">
+                    				<p>喜洋洋<span>VVIP</span></p>
+                    				<p>签名简介签名简介签名简介签名简介签名简介签名简介<a href="#" class="Popup-a Popup-a1">邀请会诊</a></p>
+                    				<p><span>广东广州</span><span>皮肤科</span><span>18554296512</span></p>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="infImage"><img src="../img/user.jpg" alt="" /></div>
+                    			<div class="infTxt">
+                    				<p>喜洋洋<span>VVIP</span></p>
+                    				<p>签名简介签名简介签名简介签名简介签名简介签名简介<a href="#" class="Popup-a Popup-a1">邀请会诊</a></p>
+                    				<p><span>广东广州</span><span>皮肤科</span><span>18554296512</span></p>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="infImage"><img src="../img/user.jpg" alt="" /></div>
+                    			<div class="infTxt">
+                    				<p>喜洋洋<span>VVIP</span></p>
+                    				<p>签名简介签名简介签名简介签名简介签名简介签名简介<a href="#" class="Popup-a Popup-a1">邀请会诊</a></p>
+                    				<p><span>广东广州</span><span>皮肤科</span><span>18554296512</span></p>
+                    			</div>
+                    		</li>
+                    		
+                    	</ul>
+           </div>
+                    
+						
+					<div class="pubPage">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">...</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+								
+		</div>
+		
+		
+	<!--弹窗2-->
+	    <div class="Popup-tow">
+	    	<div class="query-title">会诊邀请<a href="#" class="close_one">×</a></div>
+	    	<div class="tow-ipt">
+	    		请为这次会诊命名：<input type="text" />
+	    	</div>
+	    	<div class="tow-text"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+	        <div class="tow-upImage">
+	        	<div class="up-title">请上传病人心电图。</div>
+	        	<div class="up-image-ul">
+	        		<ul>
+	        			<li >
+	        				<div class="image-up-one"><span>+</span><br />上传图片</div>
+	        				<div class="delete-image"><a href="#">删除</a></div>
+	        			</li>
+	        			<li>
+	        				<div class="image-up"><span>+</span></div>
+	        				<div class="delete-image"><a href="#">删除</a></div>
+	        			</li>
+	        			<li>
+	        				<div class="image-up"><span>+</span></div>
+	        				<div class="delete-image"><a href="#">删除</a></div>
+	        			</li>
+	        			<li class="activeLi">
+	        				<div class="image-up-four"><span>+</span></div>
+	        				
+	        			</li>
+	        			<li class="activeLi">
+	        				<div class="image-up-last"><span>+</span><br />上传图片</div>
+	        			</li>
+	        		</ul>
+	        	</div>
+	        </div>
+	        <div class="Popup-tow-floor">
+	        	<div class="describe-ipt"><span>1</span><input type="text" placeholder="请输入对图1的描述"/></div>
+	        	<div class="f-prompt">友情提示：提交后会发送病人所有资料给受邀的会诊医生。<a href="#">添加</a></div>
+	        	<div class="check-div">
+	        		<div class="check-txt">是否公开会诊信息给病人</div>
+	        		<div class="check-ipt"><input type="radio" />公开<input type="radio" />不公开</div>
+	        	</div>
+	        	<div class="p-btn">
+	        		<a href="#">提交</a>
+	        	</div>
+	        </div>
+	    </div>
+		
+		
+	<!--弹窗3-->
+		<div class="Popup-there">
+			<div class="query-title">申请转诊<a href="#" class="close_one">×</a></div>
+			<div class="query-ipt"><input type="text" /></div>
+			<div class="information-container">
+                    	<ul>
+                    		<li>
+                    			<div class="infImage"><img src="../img/user.jpg" alt="" /></div>
+                    			<div class="infTxt">
+                    				<p>喜洋洋<span>VVIP</span></p>
+                    				<p>签名简介签名简介签名简介签名简介签名简介签名简介<a href="#" class="Popup-a Popup-a2">申请转诊</a></p>
+                    				<p><span>广东广州</span><span>皮肤科</span><span>18554296512</span></p>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="infImage"><img src="../img/user.jpg" alt="" /></div>
+                    			<div class="infTxt">
+                    				<p>喜洋洋<span>VVIP</span></p>
+                    				<p>签名简介签名简介签名简介签名简介签名简介签名简介<a href="#" class="Popup-a Popup-a2">申请转诊</a></p>
+                    				<p><span>广东广州</span><span>皮肤科</span><span>18554296512</span></p>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="infImage"><img src="../img/user.jpg" alt="" /></div>
+                    			<div class="infTxt">
+                    				<p>喜洋洋<span>VVIP</span></p>
+                    				<p>签名简介签名简介签名简介签名简介签名简介签名简介<a href="#" class="Popup-a Popup-a2">申请转诊</a></p>
+                    				<p><span>广东广州</span><span>皮肤科</span><span>18554296512</span></p>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="infImage"><img src="../img/user.jpg" alt="" /></div>
+                    			<div class="infTxt">
+                    				<p>喜洋洋<span>VVIP</span></p>
+                    				<p>签名简介签名简介签名简介签名简介签名简介签名简介<a href="#" class="Popup-a Popup-a2">申请转诊</a></p>
+                    				<p><span>广东广州</span><span>皮肤科</span><span>18554296512</span></p>
+                    			</div>
+                    		</li>
+                    		
+                    		
+                    	</ul>
+           </div>
+                    
+						
+					<div class="pubPage">
+						<a href="#"><span class="icon-angle-left"></span></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">...</a>
+						<a href="#"><span class="icon-angle-right"></span></a>
+					</div>
+								
+		</div>	
+		
+	<!--弹窗4-->	
+	
+		<div class="Popup-four">
+			<div class="query-title">申请转诊<a href="#" class="close_one">×</a></div>
+			<div class="four-txt">
+			    <textarea name="" id="" cols="30" rows="10"></textarea>
+			</div>
+			<div class="p-btn">
+	        		<a href="#">提交</a>
+	        	</div>
+		</div>
+		
+	<!--弹窗5-->	
+	<div class="Popup-five">
+			<div class="query-title">曲线图<a href="#">×</a></div>
+	   <div class="nav-container">
+
+	
+		<div class="searchList">
+			选择您想要显示的项目曲线图：
+			<span>
+			  <input type="checkbox" id="inlineCheckbox1" value="option1">心率
+			</span>
+			<span>
+			  <input type="checkbox" id="inlineCheckbox1" value="option1">血压
+			</span>
+			<span>
+			  <input type="checkbox" id="inlineCheckbox1" value="option1">血糖
+			</span>
+		</div>
+		<canvas id="canvas" style="margin-top:0px; width:100%; background: #fff; height: 300px;padding:0 30px;"></canvas>
+			</div>
+	 </div>
+	 
+		
+		
+		<script type="text/javascript" src="../js/jquery-2.1.0.js" ></script>
+	<script src="../js/Chart.js"></script>
+	<script>
+	var signList="";
+	
+	function getLine(year,month){
+			var date=new Date(year,month,0);
+			var totalDay=new Array();
+			var totalDate=new Array();
+			for(var i=1;i<=date.getDate();i++){
+				totalDay.push(i);
+			}
+			for(var i=1;i<=date.getDate();i++){
+				totalDate.push(randomScalingFactor());
+			}
+			var totalDate1=new Array();
+			for(var i=1;i<=date.getDate();i++){
+				totalDate1.push(randomScalingFactor());
+			}
+			var lineChartData = {
+			labels :totalDay,
+			datasets : [
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(151,187,205,0)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : totalDate
+				},
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(151,111,205,0)",
+					strokeColor : "rgba(151,111,205,1)",
+					pointColor : "rgba(151,111,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data :totalDate1}
+			]
+		
+		}	
+	
+		return lineChartData;
+	}
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+	/*	var signList = {
+			labels : ["January","February","March","April","May","June","July",
+			"January","February","March","April","May","June","July",
+			"January","February","March","April","May","June","July",
+			"January","February","March","April","May","June","July",
+			"January","February"],
+			datasets : [
+				{
+					label: "My First dataset",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				},
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),100,randomScalingFactor()]
+				}
+			]
+
+		}
+
+	*/
+	/*	var ctx = document.getElementById("canvas").getContext("2d");
+		window.myLine = new Chart(ctx).Line(lineChartData, {
+			responsive: true
+		});
+	*/
+
+	function initSign(year, month,lineChartData){
+				$("#currDate").text(year+"-"+((month+1)<10?"0"+(month+1):(month+1)));
+				var lineChartData=getLine(year,month+1);
+				var currDate = $("#currDate").text();
+				var ctx = document.getElementById("canvas").getContext("2d");
+				var b = new Chart(ctx).Line(lineChartData, {
+					responsive: true
+				});
+				/*var str = calUtil.drawCal(year,month+1,signList);*/
+				/*$("#calendar").html("").html(str);*/
+//				if(currDate=year+"-"+((month+1)<10?"0"+(month+1):(month+1))){
+//					
+//				}
+			}
+	
+		
+	
+		$(function(){
+			var that="";
+			$(document).on("click",".setNum",function(){
+				that=$(this);
+				$("#setTextVal").height($(window).innerHeight());
+				$("#setTextVal").show();
+			})
+			
+			$(".setTextBtn").click(function(){
+				that.html("<span>"+$("#textMin").val()+"</span><span>"+$("#textMax").val()+"</span>");
+				$("#setTextVal").hide();
+			})
+			
+			$(".cancelTextBtn").click(function(){
+				that.html("<span>"+$("#textMin").val()+"</span><span>"+$("#textMax").val()+"</span>");
+				$("#setTextVal").hide();
+			})
+			var today=new Date();
+			
+			$(".searchDate").html(today.getFullYear()+"/"+today.getMonth()+"/"+today.getDate());
+		$(".searchDate").click(function(){
+			$(".getDateVal").fadeToggle();
+		})
+		
+		var iDate = new Date();
+		
+				
+				
+				
+			initSign(iDate.getFullYear(), iDate.getMonth(), signList);
+		
+		$("#minusMonth").on("click", function(){
+					var currDate = $("#currDate").text();
+					var date = new Date(currDate);
+					//0表示1月份，再减一个月就得减年份
+					var year;
+					var month;
+					if(date.getMonth() == 0){
+						year = date.getFullYear() - 1;
+						month = 11;
+						var signList = "";
+						
+						initSign(year, month, signList);
+					}else{
+						year = date.getFullYear();
+						month = date.getMonth()-1;
+						var signList = "";
+						console.log(year+"="+month);	
+						initSign(year, month, signList);
+					}
+				});
+				//下一个月的签到情况
+				$("#addMonth").on("click", function(){
+					var currDate = $("#currDate").text();
+					var date = new Date(currDate);
+					//11表示12月份，再加一个月就得加年份
+					var year;
+					var month;
+					if(date.getMonth() == 11){
+						year = date.getFullYear() + 1;//年份加1
+						month = 0;//月份重新赋值为0（表示1月）
+						var signList = "";
+						initSign(year, month, signList);
+					}else{
+						year = date.getFullYear();
+						month = date.getMonth()+1;
+						var signList = "";
+						console.log(year+"="+month);	
+						initSign(year, month, signList);
+					}
+				});
+		
+		})
+		
+		
+		
+		$(document).on("click",".Popup-a1",function(){
+			
+			$(".Popup-one").hide();
+			$(".Popup-tow").show();
+			
+		})
+		
+		$(document).on("click",".Popup-a2",function(){
+			
+			$(".Popup-there").hide();
+			$(".Popup-four").show();
+			
+		})
+		
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	</body>
+
+</html>
